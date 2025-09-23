@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{fontspec}
+
+\setmainfont{Roboto}
+
+\newfontfamily\ubuntu[
+    Path = ../fonts/,
+    UprightFont = Ubuntu-Regular.ttf,
+    BoldFont    = Ubuntu-Bold.ttf,
+    ItalicFont  = Ubuntu-Italic.ttf,
+    BoldItalicFont = Ubuntu-BoldItalic.ttf
+]{Ubuntu}
+
+\begin{document}
+This is Roboto aA Uu.  
+
+{\ubuntu This is Ubuntu Regular from  TTF aA Uu.}  
+
+
+\textbf{\ubuntu This is Ubuntu Bold from TTF aA Uu.} 
+
+ 
+
+\end{document}

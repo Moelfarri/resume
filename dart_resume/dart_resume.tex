@@ -1,0 +1,95 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{tikz}
+
+% Fonts ---
+\usepackage{fontspec}
+\setmainfont{Roboto} % Change to your preferred font
+
+
+% Fonts ---
+
+% Section title style (uppercase, spaced)
+\titleformat{\section}{\bfseries\uppercase}{\thesection}{0.5em}{}[\titlerule]
+
+% No numbering
+\setcounter{secnumdepth}{0}
+
+% Reduce space between items
+\setlist[itemize]{nosep,left=0pt}
+
+\begin{document}
+
+% Header
+\noindent \textbf{CV / Elias Elfarri} \hfill \textbf{App utvikler} \\
+\rule{\linewidth}{0.5pt}
+
+% Quote
+
+
+\begin{paracol}{2}
+% ----- Left column -----
+\begin{flushleft}
+    \begin{tikzpicture}
+     \clip (0,1.5) circle (2cm); % adjust size (radius)
+     \node at (0,0) {\includegraphics[width=5cm]{../portrait.jpg}};
+    \end{tikzpicture}
+
+    % a bar between image and name
+    \vspace{1em}
+    \noindent\rule{4cm}{10pt}
+    
+
+    \vspace{1.5em}
+    {\Huge \textbf{Elias Elfarri}} \\
+    \vspace{0.5em}
+    Text about me. .....wg mwago wamog iwamgi owamgp wagwa opgawowapog 
+    wagmokwag omwaog iwamogiwaiogwaiogmwa
+    gwmaokgwaogmwaogmwaoigwimeogiewigmwea 
+    oigmewoi gmwaigoiwae gwmglwaok gmwalg mawlkg mwklagm walkgmw lka 
+\end{flushleft}
+
+\switchcolumn
+
+\vspace{5em}
+\begin{center}
+    
+\end{center}
+\vspace{2em}
+
+% ----- Right column -----
+\section{Erfaring}
+\begin{tabular}{@{}ll}
+2020-- & Selskap, Tittel \\
+\end{tabular}
+
+\section{Utdanning}
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+2018--2020 & UiO -- Programmering og Systemarkitektur, Master \\
+2015--2018 & UiO -- Bachelor i Realfag \\
+\end{tabularx}
+
+
+\section{Kunder}
+kunde1, kunde2, kunde3
+
+\section{Roller}
+Fullstackutvikler
+
+\end{paracol}
+
+\vfill
+\noindent\rule{\linewidth}{0.5pt}\\
+\hfill 
+
+\end{document}
