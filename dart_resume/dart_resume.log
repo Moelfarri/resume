@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  23 SEP 2025 18:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  24 SEP 2025 21:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count192
 \c@section=\count193
@@ -637,12 +637,12 @@ LaTeX Font Info:    ... okay on input line 39.
 * \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -713,32 +713,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 File: ../portrait.jpg Graphic file (type bmp)
 <../portrait.jpg>
 
-Underfull \hbox (badness 6094) in paragraph at lines 76--97
-[]\TU/Roboto(0)/m/n/12 Elias er en mobilutvikler med fire
+Underfull \hbox (badness 1048) in paragraph at lines 77--98
+\TU/Roboto(0)/m/n/10 på App Store og Google Play. Med erfar-
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 76--97
-\TU/Roboto(0)/m/n/12 bilteam, ledet utviklingen av skaler-
+Underfull \hbox (badness 1052) in paragraph at lines 77--98
+\TU/Roboto(0)/m/n/10 grafer til widgets og spesialisert hardware-
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 76--97
-\TU/Roboto(0)/m/n/12 reflektert og har gode pedagogiske
- []
-
-
-Underfull \hbox (badness 2961) in paragraph at lines 76--97
-\TU/Roboto(0)/m/n/12 evner. Elias leder Flutter Meetup-
- []
-
-
-Overfull \hbox (14.2074pt too wide) in paragraph at lines 147--151
-\TU/Roboto(0)/m/n/10.95 Frontend utvikler,   App utvikler,   Tech lead,   Fagansvarlig 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
@@ -746,19 +731,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
 [1
 
-] (./dart_resume.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+
+
+[2] (./dart_resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23569 strings out of 473832
- 548396 string characters out of 5729481
- 1012894 words of memory out of 5000000
- 46256 multiletter control sequences out of 15000+600000
- 565416 words of font info for 71 fonts, out of 8000000 for 9000
+ 23556 strings out of 473832
+ 548338 string characters out of 5729481
+ 1012861 words of memory out of 5000000
+ 46249 multiletter control sequences out of 15000+600000
+ 562465 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,8n,98p,499b,869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on dart_resume.pdf (1 page).
+Output written on dart_resume.pdf (2 pages).
