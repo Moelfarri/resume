@@ -167,10 +167,13 @@ Fagansvarlig
 
   
 
- % TODO: add erfaringer inlinex: 2024, 2025, 2026
+ % TODO: add erfaringer inlinex: 2025, 2026
  % TODO: add erfaringer fra hva jeg gjorde i masteren 
  % TODO: Add Seksjon med publikasjoner, foredrag, leserinnlegg
  % TODO: Legg til tlf nr og email i headeren på første side
+ % TODO: Fiks overflyt/layout av tekst i erfaringer
+ % TODO: Fiks at headeren er på alle sider ikke hardcoda per side
+ 
  % --- Verv seksjon ---
 \section{Verv}
 \begin{tabularx}{\linewidth}{@{}lX@{}}
@@ -183,17 +186,34 @@ Fagansvarlig
 % --- Stor tittel for prosjekter ---
 \section{{\Huge \ubuntu PROSJEKTER}}
 
+
+
 % --- Erfaring ---
 \noindent
 \begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{InlineX}
 & \textbf{Prosjekt:} tekst kommer \\
 Modningsfasen & \\
-Jan.2024 - Des.2024 & \\
+Jan.2025 - Des.2025 & \\
 & \\
 &  \textbf{Rolle:} \\
 & \\
 & \textbf{Kompetanser:} \\
+\end{tabular}
+
+\vspace{2em}
+
+% --- Erfaring ---
+\noindent
+\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} I 2024 ledet Elias oppstarten av InlineX Stream, selskapets hittil største mobilprosjekt, samtidig som han hadde ansvar for drift \\
+Modningsfasen & av Insitu Sync. Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som formål å erstatte tidligere \\
+Jan.2024 - Des.2024 & industrielle enheter til en verdi av rundt 2 millioner NOK med en løsning basert på app + Bluetooth-krets (ESP32). Resultatet var en reduksjon i produksjonskostnader til 150 000 NOK per enhet, lavere vedlikeholdskostnader og enklere hardware stack. På dette tidspunktet består teamet av en stadig voksende produktavdeling med folk på embedded, cloud, mobil, design og prosjektledelse. På teknisk side bygges den nye "Stream" appen av et inhouse design komponent bibliotek, first party native plugins og mange andre pakker takket være en monorepo arkitektur. Den viktigste featuren blir en tredelt BLE-løsning (native plugins i Swift/Kotlin, businesslogikk med egen GATT-protokoll, og UI/UX-lag).\\
+& \\
+&  \textbf{Rolle:} Som Mobile Tech Lead hadde Elias overordnet ansvar for tre apper, teknisk retning for mobilavdelingen og ledelse av en annen juniorutvikler. Han drev rekruttering, opplæring, tekniske beslutninger og fungerte som bindeledd mellom produkt, design og ledelse. Han fasiliterte retroer, jobbet med OKRs, kvartalsvis estimater, stakeholder management og leveranser, samt bidro til selskapets produktstrategi og navnearbeid. I samarbeid med ledelsen bidro han til å transformere selskapet videre til et continuous discovery-produkt scale-up, hvor man organiserte arbeidet i trioer (produkteier, designer, tech lead) og bidro i å etablere et Domain Driven Design-rammeverk for felles begrepsbruk på tvers av organisasjonen. \\
+& \\
+& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, Jetpack Compose, Objective-C, Android, iOS, Linux, ESP32, CoreBluetooth, Android Bluetooth API, BLE-arkitektur, gRPC, WebSockets, SQLite, Drift ORM, RxDart, Freezed, BLoC, Melos, Mason, Widgetbook, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi.\\
 \end{tabular}
 
 
