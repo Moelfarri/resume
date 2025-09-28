@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  28 SEP 2025 14:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  28 SEP 2025 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,16 +885,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ubuntu' on input line 208.
+(hyperref)                removing `\ubuntu' on input line 206.
 
 [2] [3]
-Underfull \hbox (badness 1178) in paragraph at lines 303--304
+Underfull \hbox (badness 1178) in paragraph at lines 301--302
 \TU/Roboto(0)/m/n/10 PID-regulator, dynamisk posisjonering, sertifisering av DP-systemer,
  []
 
+[4]
 
-
-[4] (./dart_resume.aux)
+[5] (./dart_resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -903,12 +903,12 @@ Package rerunfilecheck Info: File `dart_resume.out' has not changed.
 (rerunfilecheck)             Checksum: 356B74E9C34F02D986E3F76615C49EA4;588.
  ) 
 Here is how much of TeX's memory you used:
- 30473 strings out of 473832
- 657270 string characters out of 5729481
- 1142413 words of memory out of 5000000
- 53072 multiletter control sequences out of 15000+600000
+ 30474 strings out of 473832
+ 657276 string characters out of 5729481
+ 1141448 words of memory out of 5000000
+ 53073 multiletter control sequences out of 15000+600000
  562825 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,11n,98p,914b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,11n,98p,916b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on dart_resume.pdf (4 pages).
+Output written on dart_resume.pdf (5 pages).
