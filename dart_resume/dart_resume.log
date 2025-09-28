@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  28 SEP 2025 14:44
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  28 SEP 2025 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,14 +885,44 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ubuntu' on input line 206.
+(hyperref)                removing `\ubuntu' on input line 203.
 
-[2] [3]
-Underfull \hbox (badness 1178) in paragraph at lines 301--302
+
+Underfull \hbox (badness 2503) in paragraph at lines 227--228
+[]|\TU/Roboto(0)/b/n/10 Prosjekt: \TU/Roboto(0)/m/n/10 I 2025 gikk InlineX inn i produksjonsfasen av Stream-
+ []
+
+
+Underfull \hbox (badness 5274) in paragraph at lines 229--230
+[]|\TU/Roboto(0)/m/n/10 dedikerte hardware-enheter med mobilapper og BLE-baserte IoT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+[]|\TU/Roboto(0)/m/n/10 Han fikk også på plass SwiftUI-baserte grafer, en egen
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 234--235
+\TU/Roboto(0)/m/n/10 AVFoundation/CameraX-plugin for kamera, og videre modning av
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 234--235
+\TU/Roboto(0)/m/n/10 leder for mobilteamet hadde Elias ansvar for onboarding, ressurs-
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 234--235
+\TU/Roboto(0)/m/n/10 planlegging, stakeholder management og leveranser. Han bidro i
+ []
+
+[2] [3] [4]
+Underfull \hbox (badness 1178) in paragraph at lines 302--303
 \TU/Roboto(0)/m/n/10 PID-regulator, dynamisk posisjonering, sertifisering av DP-systemer,
  []
 
-[4]
+
 
 [5] (./dart_resume.aux)
  ***********
@@ -905,10 +935,10 @@ Package rerunfilecheck Info: File `dart_resume.out' has not changed.
 Here is how much of TeX's memory you used:
  30474 strings out of 473832
  657276 string characters out of 5729481
- 1141448 words of memory out of 5000000
+ 1140448 words of memory out of 5000000
  53073 multiletter control sequences out of 15000+600000
  562825 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,11n,98p,916b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,11n,98p,1052b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on dart_resume.pdf (5 pages).
