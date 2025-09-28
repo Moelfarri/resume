@@ -12,6 +12,8 @@
 \usepackage{tabularx}
 \usepackage{tikz}
 \usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{longtable}
 
 % Fonts ---
 \usepackage{fontspec}
@@ -36,15 +38,30 @@
 % Reduce space between items
 \setlist[itemize]{nosep,left=0pt}
 
+% setup for header and footer
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% Header
+\fancyhead[L]{CV / \textbf{Elias Elfarri}}
+\fancyhead[C]{+47 45 18 27 12 | moelfarri@gmail.com}
+\fancyhead[R]{\textbf{Mobilutvikler}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{40pt}
+
+% FOOTER (line + centered page number)
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+\setlength{\footskip}{20pt}     % distance from text to footer
+ 
+
+
 \begin{document}
 % --- Side 1 starter her fra ---
 
-% Header
-\noindent CV / \textbf{Elias Elfarri} \hfill \textbf{Mobilutvikler} \\
-\rule{\linewidth}{0.5pt}
-
-
-% Space before header
+% Space before content
 \vspace{3em}
 
 \begin{paracol}{2}
@@ -155,24 +172,14 @@ Fagansvarlig
 
 \end{paracol}
 
-\vfill
-\noindent\rule{\linewidth}{0.5pt}\\
-\hfill 
-
 \newpage
 % --- Side 2 starter her fra ---
-% Header
-\noindent CV / \textbf{Elias Elfarri} \hfill \textbf{Mobilutvikler} \\
-\rule{\linewidth}{0.5pt}
 
-  
+
 
  % TODO: add erfaringer inlinex: 2025, 2026
  % TODO: add erfaringer fra hva jeg gjorde i masteren 
  % TODO: Add Seksjon med publikasjoner, foredrag, leserinnlegg
- % TODO: Legg til tlf nr og email i headeren på første side
- % TODO: Fiks overflyt/layout av tekst i erfaringer
- % TODO: Fiks at headeren er på alle sider ikke hardcoda per side
  
  % --- Verv seksjon ---
 \section{Verv}
@@ -187,25 +194,41 @@ Fagansvarlig
 \section{{\Huge \ubuntu PROSJEKTER}}
 
 
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} tekst kommer \\
+Produksjonsfasen & \\
+Jan.2026 - Jun.2026 & \\
+& \\
+&  \textbf{Rolle:} \\
+& \\
+& \textbf{Kompetanser:} \\
+\end{longtable}
+
+\vspace{2em}
+
+
 
 % --- Erfaring ---
 \noindent
-\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{InlineX}
 & \textbf{Prosjekt:} tekst kommer \\
-Modningsfasen & \\
+Produksjonsfasen & \\
 Jan.2025 - Des.2025 & \\
 & \\
 &  \textbf{Rolle:} \\
 & \\
 & \textbf{Kompetanser:} \\
-\end{tabular}
+\end{longtable}
 
 \vspace{2em}
 
 % --- Erfaring ---
 \noindent
-\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{InlineX}
 & \textbf{Prosjekt:} I 2024 ledet Elias oppstarten av InlineX Stream, selskapets hittil største mobilprosjekt, samtidig som han hadde ansvar for drift \\
 Modningsfasen & av Insitu Sync. Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som formål å erstatte tidligere \\
@@ -214,14 +237,14 @@ Jan.2024 - Des.2024 & industrielle enheter til en verdi av rundt 2 millioner NOK
 &  \textbf{Rolle:} Som Mobile Tech Lead hadde Elias overordnet ansvar for tre apper, teknisk retning for mobilavdelingen og ledelse av en annen juniorutvikler. Han drev rekruttering, opplæring, tekniske beslutninger og fungerte som bindeledd mellom produkt, design og ledelse. Han fasiliterte retroer, jobbet med OKRs, kvartalsvis estimater, stakeholder management og leveranser, samt bidro til selskapets produktstrategi og navnearbeid. I samarbeid med ledelsen bidro han til å transformere selskapet videre til et continuous discovery-produkt scale-up, hvor man organiserte arbeidet i trioer (produkteier, designer, tech lead) og bidro i å etablere et Domain Driven Design-rammeverk for felles begrepsbruk på tvers av organisasjonen. \\
 & \\
 & \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, Jetpack Compose, Objective-C, Android, iOS, Linux, ESP32, CoreBluetooth, Android Bluetooth API, BLE-arkitektur, gRPC, WebSockets, SQLite, Drift ORM, RxDart, Freezed, BLoC, Melos, Mason, Widgetbook, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi.\\
-\end{tabular}
+\end{longtable}
 
 
 
 \vspace{2em}
 
 \noindent
-\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{InlineX}
 & \textbf{Prosjekt:} I 2023 fortsatte Elias arbeidet med InlineX Mobile og tok  initiativ til å restrukturere kodebasen til et monorepo for å støtte \\
 Restruktureringsfasen & utviklingen av flere enterprise nivå applikasjoner. Han utviklet blant annet Insitu Sync,  en applikasjon med robust online/offline-synkronisering,\\
@@ -230,7 +253,7 @@ Jan.2023 - Des.2023 & og bygde opp et enkelt designsystem i Figma inspirert av M
 & \textbf{Rolle:} Elias var både utvikler, arkitekt og endringsagent. Han tok initiativ til å etablere moderne arbeidsprosesser, fasiliterte retrospektiver og bidro aktivt til at selskapet innførte standups, sprintarbeid, OKRs, continuous discovery-trioer og stakeholder management. Han tok ansvar for å koble utvikling tettere på produkt- og forretningssiden, og sørget for at teamet hadde verktøyene og prosessene som trengtes for å skalere. \\
 & \\
 & \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Melos (monorepo), Widgetbook, Mason, Drift ORM/SQLite, RxDart, Freezed, Build Runner, Firebase Crashlytics, Azure DevOps (Git, Pipelines), VS Code, Android Studio, Xcode, Figma (Material 3, Atomic Design), Slack, Confluence, Jira, Monday, WebSockets, gRPC, stakeholder management, delivery management, OKRs, continuous discovery, fasilitering av retrospektiver, innføring av agile prosesser, produktstrategi og endringsledelse. \\
-\end{tabular}
+\end{longtable}
 
 
 \vspace{2em}
@@ -238,7 +261,7 @@ Jan.2023 - Des.2023 & og bygde opp et enkelt designsystem i Figma inspirert av M
 
 % --- Erfaring ---
 \noindent
-\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{InlineX}
 & \textbf{Prosjekt:} Elias ble hentet inn som konsulent for å utvikle en kryssplattform applikasjon for iOS, Android og Linux, til bruk innen  energi- og\\
 Startupfasen & offshore-sektoren. Oppdraget startet som en hasteløsning for kunder uten internett, men utviklet seg til å bli et strategisk produkt for \\
@@ -248,14 +271,14 @@ Aug.2022 - Des.2022 & selskapet. Elias besluttet å ta i bruk Flutter, og levert
 & \\
 & \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Android, iOS, Linux, Figma, Azure DevOps (Git, Pipelines), Firebase Crashlytics, SQLite, Riverpod, BLoC pattern, WebSockets, REST, RxDart, gRPC, KeyChain, MDM, Material Design 3, Widgetbook, Melos, Mason, Drift ORM, Shorebird, Pigeon, FFIgen, SwiftUI, Live Activities, Dynamic Island, TestFlight, Google Play Console, C++, BLE, Docker, Kubernetes, Maestro (integrasjonstesting), CI/CD, moderne produktutvikling og arkitektur. \\
 
-\end{tabular}
+\end{longtable}
 
 
 \vspace{2em}
 
 % --- Erfaring ---
 \noindent
-\begin{tabular}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
 \textbf{DNV} 
 & \textbf{Prosjekt:} Elias har utviklet nye funksjoner i DP-CAP og DYN-CAP applikasjonene, brukt til beregninger og sertifisering av dynamisk pos-\\
 Maritime Cybernetics Advisory & isjonering av skip. Han utviklet i Python/OpenCV basert på Watershed-metoden, som reduserte manuelt arbeid fra flere dager til sekunder, og som ble kritisk for sertifiseringsanalyser bestilt av kunder\\
@@ -264,7 +287,7 @@ Maritime Cybernetics Advisory & isjonering av skip. Han utviklet i Python/OpenCV
 & \textbf{Rolle:} Systemutvikler, backend, frontend, bildebehandlingsingeniør. \\
 & \\
 & \textbf{Kompetanser:} TypeScript, React, ClojureScript, Reframe, Clojure, Java, Python (OpenCV), Leiningen, Jenkins, bildebehandling/Computer Vision, PID-regulator, Watershed algoritmen og klassisk bildebehandling, PID-regulator, dynamisk posisjonering, sertifisering av DP-systemer, maritim domeneforståelse General Arrangement tegninger. \\
-\end{tabular}
+\end{longtable}
  
 
 
