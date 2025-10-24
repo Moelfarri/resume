@@ -1,0 +1,323 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref} % legg til i preamble
+
+% Fonts ---
+\usepackage{fontspec}
+\setmainfont{Roboto} % Change to your preferred font
+
+
+\newfontfamily\ubuntu[
+    Path = ../fonts/,
+    UprightFont = Ubuntu-Regular.ttf,
+    BoldFont    = Ubuntu-Bold.ttf,
+    ItalicFont  = Ubuntu-Italic.ttf,
+    BoldItalicFont = Ubuntu-BoldItalic.ttf
+]{Ubuntu}
+% Fonts ---
+
+% Section title style (uppercase, spaced)
+\titleformat{\section}{\bfseries\uppercase}{\thesection}{0.5em}{}
+
+% No numbering
+\setcounter{secnumdepth}{0}
+
+% Reduce space between items
+\setlist[itemize]{nosep,left=0pt}
+
+% setup for header and footer
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% Header
+\fancyhead[L]{CV / \textbf{Elias Elfarri}}
+\fancyhead[C]{+47 45 18 27 12 | moelfarri@gmail.com}
+\fancyhead[R]{\textbf{Mobilutvikler}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{40pt}
+
+% FOOTER (line + centered page number)
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+\setlength{\footskip}{20pt}     % distance from text to footer
+ 
+
+
+\begin{document}
+% --- Side 1 starter her fra ---
+
+% Space before content
+\vspace{3em}
+
+\begin{paracol}{2}
+% ----- Left column -----
+\begin{flushleft}
+    % Profile picture
+    \begin{tikzpicture}
+     \clip (0,1.5) circle (2cm); % adjust size (radius)
+     \node at (0,0) {\includegraphics[width=5cm]{../portrait.jpg}};
+    \end{tikzpicture}
+
+    % a bar between image and name
+    \vspace{1em}
+    \noindent\rule{4cm}{10pt}
+    
+
+    \vspace{1.5em}
+    {\Huge \ubuntu{Elias Elfarri}} \\
+    \vspace{0.5em}
+    
+    \begin{tcolorbox}[
+        colback=white,       % background color
+        colframe=white,      % border color
+        boxrule=0.0pt,       % border thickness
+        arc=2mm,             % rounded corners
+        width=0.85\linewidth,% make box narrower than column
+        left=0mm, right=2mm, top=1mm, bottom=1mm % inner padding
+        ]
+    
+    Elias er en mobilutvikler med 
+    fire års erfaring fra både native-utvikling
+     i Swift og Kotlin og kryssplattform med Flutter/Dart.
+      Han har bygget opp mobilteam,
+       ledet utviklingen av skalerbare
+        kodebaser og publisert syv apper 
+        på App Store og Google Play. 
+        Med erfaring som spenner fra BLE,
+         kamera og sanntids grafer til widgets 
+         og spesialisert hardware-integrasjon,
+          behersker han hele spekteret av
+           mobilutvikling.
+      Han er kjent som initiativrik, 
+      reflektert og har gode pedagogiske evner.
+       Elias leder Flutter Meetup-nettverket i 
+       Oslo/Norge med over 500 medlemmer,
+        hvor han arrangerer samlinger, 
+        kurs og hackathons. 
+        Dette engasjementet 
+        gjør ham til en pådriver som både løfter
+         prosjekter og kolleger.
+    \end{tcolorbox}
+\end{flushleft}
+
+\switchcolumn
+
+\vspace{5em}
+\begin{center}
+    
+\end{center}
+\vspace{2em}
+
+% ----- Right column -----
+ 
+\section{\ubuntu ERFARING}
+\renewcommand{\arraystretch}{1.3} % Spacing between rows
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+2022 -- d.d & Fink AS, Mobilutvikler \\
+2023 -- 2025 & Fink AS, Fagansvarlig Mobilutvikling \\
+2021 -- 2022 & DNV, Frontend utvikler \\
+2019 -- 2020 & Jenteprosjektet Ada, Prosjekt assistent \\
+2018 -- 2022 & SIT, Team leder \\
+2017 -- 2018 & NVFT AS, Promotør \\
+2015 -- 2016 & Oslo Kommune, Hjelpepleier \\
+\end{tabularx}
+
+% space and line
+\vspace{0.5em} 
+\noindent\rule{\linewidth}{0.2pt}
+
+\section{\ubuntu Utdanning}
+\renewcommand{\arraystretch}{1.3} % Spacing between rows
+\begin{tabularx}{\columnwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+2017 -- 2022 & Norges teknisk-naturvitenskapelige universitet, Master i kybernetikk og robotikk, Sivilingeniør \\
+2017 -- 2017 & Université de Caen Normandie, Utveksling \\
+2016 -- 2017 & Norges teknisk-naturvitenskapelige universitet, Årsstudium i Fransk språk og litteratur \\
+\end{tabularx}
+
+% space and line
+\vspace{0.5em} 
+\noindent\rule{\linewidth}{0.2pt}
+
+
+\section{\ubuntu Kunder}
+DNV, \hspace{0.1em} 
+InlineX, \hspace{0.1em} 
+Norges teknisk-naturvitenskapelige
+universitet
+
+% space and line
+\vspace{0.5em} 
+\noindent\rule{\linewidth}{0.2pt}
+
+\section{\ubuntu Roller}
+Tech lead, \hspace{0.1em}
+Mobilutvikler, \hspace{0.1em}
+Frontend utvikler, \hspace{0.1em}
+Fagansvarlig
+
+\end{paracol}
+
+\newpage
+% --- Side 2 starter her fra ---
+
+ % --- Verv seksjon ---
+\section{Verv}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+2023 -- d.d & Flutter Oslo Meetup gruppe, Arrangør og leder \\
+2024 -- d.d & Flutter and Friends Conference Stockholm, Arrangør \\
+2018 -- 2019 & ISFiT, Dialog koordinator \\
+\end{tabularx}
+\vspace{1em}
+
+ % --- Publikasjoner seksjon ---
+\section{Publikasjoner}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+Sep.2025 & 
+Konferanseforedrag, Either This or That: Expressive Error-Handling in Dart \\
+Jan.2025 & 
+\href{https://www.kode24.no/artikkel/derfor-bor-du-velge-flutter-i-2025/82529763}{kode24 artikkel, Derfor bør du velge Flutter i 2025!} \\
+Nov.2024 & 
+\href{https://www.kode24.no/artikkel/mener-det-er-tull-at-det-ikke-satses-pa-flutter-men-dart-er-en-flaskehals/82169214}{kode24 artikkel, Mener det er tull at det ikke satses på Flutter: – Men Dart er en flaskehals} \\
+Apr.2023 & 
+\href{https://ieeexplore.ieee.org/document/10093855/citations?tabFilter=papers\#citations}{Publikasjon av masteroppgaven, Artificial Intelligence-Driven Digital Twin of a Modern House Demonstrated in Virtual Reality} \\
+\end{tabularx}
+\vspace{1em}
+
+% --- Stor tittel for prosjekter ---
+\section{{\Huge \ubuntu PROSJEKTER}}
+
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} tekst kommer \\
+Produksjonsfasen & \\
+Jan.2026 - Jun.2026 & \\
+& \\
+&  \textbf{Rolle:} \\
+& \\
+& \textbf{Kompetanser:} \\
+\end{longtable}
+
+\vspace{2em}
+
+
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  
+\textbf{InlineX} 
+& \textbf{Prosjekt:} I 2025 gikk InlineX inn i produksjonsfasen av Stream-prosjektet. Selskapet hadde vokst til 21 ansatte og etablert seg \\
+Produksjonsfasen & som en scale-up med fokus på å redusere kostnader ved å erstatte dedikerte hardware-enheter med native mobilapper og BLE-baserte  \\
+Jan.2025 -- Des.2025 & IoT-løsninger. \\
+& \\
+& \textbf{Rolle:} Som Native Platforms Tech Lead hadde Elias det overordnede ansvaret for monorepo-arkitekturen, teknisk kvalitet og strategiske beslutninger for mobilplattformen. Han sørget for at InlineX Stream nådde versjon 1.0.0 i slutten av Q3, akkurat som planlagt, noe som banet vei for at salgsteamet kunne starte kommersialiseringen og rulle ut løsningen til betalende kunder. \\
+& \\
+& På den tekniske siden videreutviklet han iOS-plattformen med Swift Charts, en AVFoundation-basert kameramodul, og forbedret BLE-stabilitet gjennom CoreBluetooth. Han satte opp en selvhostet CI/CD-pipeline på Mac Mini for bygg, signering og distribusjon til TestFlight og Google Play, samt for å kjøre tunge E2E-tester med Maestro. Gjennom dette arbeidet bidro Elias til å redusere bygg- og distribusjonstiden, forbedre testdekning og sikre høy leveransekvalitet. \\
+& \\
+& I tillegg etablerte han agentisk AI-infrastruktur med verktøy som Claude Code, Copilot og Gemini, slik at utviklerne kunne jobbe raskere med bedre kontekststøtte og automatisert dokumentasjon. Han samarbeidet også tett med jurister for å sikre GDPR- og privacy-compliance, og veiledet alle i teamet inklusiv designerne og produkteiere slik at utrulling til appstores skulle skje smidig og med minimalt av feedback fra Apple og Google. App launch ble akseptert inni appstores innen 5 dager takket være alle disse forberedelsene. \\
+& \\
+& Elias sitt arbeid hadde stor innvirkning på både kvalitet og lønnsomhet. Produksjonskostnadene per enhet ble redusert fra om lag 2 MNOK til 150 000 kroner, samtidig som utviklingstempoet økte og vedlikeholdskostnadene falt. Han bidro også til å bygge opp mobilteamet gjennom rekruttering, opplæring og teknisk ledelse, og var en sentral drivkraft i selskapets videre skalering og profesjonalisering av produktutviklingen. \\
+& \\
+& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, iOS, Android, CoreBluetooth, Android Bluetooth, ESP32, AVFoundation, CameraX, Objective-C, Java, C, IoT-integrasjon, mobil monorepo-arkitektur, vertical slices, micro-frontends, in-house design system, 400+ custom lint-regler, codegen-verktøy, RxDart, Bluetooth Low Energy, Widgetbook, flutter\_blue\_plus, Pub workspaces, Melos, Mason, UIKit, Android Settings Intents, DCM, Pigeon, Shorebird, Drift ORM/SQLite, Freezed, Build Runner, Golden testing, Unit Tests, Integration Tests, VSCode, Xcode, Android Studio, CI/CD (Azure DevOps, Fastlane, Maestro, xcodebuild, Fastlane Match, Fastlane Screenshot Automation, Fastlane Beta Deployment), self-hosted Mac Mini agent, TestFlight, Google Play Console, App Store Connect API, Firebase Crashlytics, Firebase Analytics, Firebase Performance Monitoring, Microsoft Clarity, Privacy Manifest, Privacy Policy, GDPR compliance, Google Cloud Console, stakeholder management, teamledelse, onboarding, rekruttering, backlog refinement, delivery management, produktstrategi, continuous discovery \& delivery, trio-modellen, Claude Code, Gemini, Copilot, Claude Desktop, ChatGPT Desktop. \\
+\end{longtable}
+
+\vspace{2em}
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} I 2024 ledet Elias oppstarten av InlineX Stream, selskapets hittil største iOS-prosjekt, samtidig som han hadde ansvar for \\
+Modningsfasen &  drift og videreutvikling av Insitu Sync. Prosjektet skulle digitalisere verktøyene til verkstedsteknikere som jobbet med sikkerhetsventiler. \\
+Jan.2024 - Des.2024 & Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som mål å erstatte industrielle enheter til en verdi av rundt 2 MNOK med en løsning basert på mobilapp og ESP32 Bluetooth-krets. Løsningen skulle støtte sanntidsstreaming, datainnsamling og fjernkontroll av utstyr – og samtidig redusere behovet for kostbare dedikerte enheter slik det var idag. \\
+& \\
+&  \textbf{Rolle:} Som Native Platforms Tech Lead hadde Elias det overordnede ansvaret for tre applikasjoner, den tekniske retningen for mobilutviklingen og veiledning av en juniorutvikler. Han ledet rekruttering, opplæring og tekniske beslutninger, og fungerte som bindeledd mellom produkt, design og ledelse. Han bygde Stream-appen som en native iOS-løsning i Swift og SwiftUI med dyp BLE-integrasjon via CoreBluetooth. Løsningen hadde en tredelt arkitektur med Swift-plugins, egen GATT-protokoll og et dedikert UI/UX-lag, utviklet innenfor en monorepo-struktur for deling av moduler og designkomponenter på tvers av plattformer. Elias var sentral også i prosesser for retrospektiver, OKRs og stakeholder management, og var sentral i å utvikle InlineX til et continuous discovery-orientert scale-up med tverrfaglige trioer og et felles Domain Driven Design-rammeverk. Arbeidet hans reduserte produksjonskostnadene per enhet fra rundt 2 millioner til 150 000 kroner, og reduserte både drift og vedlikeholdskostnader med nesten 80\%. \\
+& \\
+& \textbf{Kompetanser:} Swift, SwiftUI, MMVM, Objective-C,, ESP32, CoreBluetooth, gRPC, WebSockets, SQLite, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi \\
+\end{longtable}
+
+
+
+\vspace{2em}
+
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} I 2023 fortsatte Elias arbeidet med InlineX Mobile og tok initiativ til å restrukturere kodebasen til en monorepo-arkitektur for å \\
+Restruktureringsfasen & støtte utviklingen av flere enterprise-nivå applikasjoner. Arkitekturen ble bygget med Flutter som monorepo-orkestratør, slik at flere apper \\
+Jan.2023 - Des.2023 &  kunne dele felles byggeklosser og logikk, samtidig som de ble utviklet med native komponenter i Swift og SwiftUI. Elias fortsatte arbeidet på Insitu Sync. Han etablerte starten på et designsystem i Figma inspirert av Material 3, som la til rette for gjenbruk av komponenter på tvers av plattformer. Dette bidro til raskere leveranser, høyere kvalitet og en mer konsistent brukeropplevelse. Samtidig tok Elias en nøkkelrolle i selskapets organisatoriske transformasjon. Han fikk ledelsen med på å utvide teamet med en ekstra utvikler, en designer og en prosjektleder , noe som gjorde det mulig å etablere en mer moden produktutviklingskultur. Prosjektet markerte et vendepunkt der InlineX gikk fra prosjektbasert leveranse til en produktavdeling med agile prosesser, kontinuerlig discovery og tett samarbeid mellom utvikling og design.\\
+& \\
+& \textbf{Rolle:}  Elias fungerte som iOS-utvikler, arkitekt og teknisk leder. Han tok initiativ til å etablere moderne arbeidsprosesser, fasiliterte retrospektiver og bidro til at selskapet innførte standups, sprintarbeid, OKRs, continuous discovery-trioer og stakeholder management. Han hadde ansvar for å knytte utviklingen tettere til produkt- og forretningsmål, og sørget for at teamet hadde struktur, verktøy og prosesser for å kunne skalere effektivt.  \\
+& \\
+& \textbf{Kompetanser:} Swift, SwiftUI, UIKit, Combine, Core Data, SQLite, URLSession, JSONDecoder/Codable, Keychain, Fastlane, XCTest, XCTest UI, TestFlight, App Store Connect, Firebase Crashlytics, Azure DevOps (Git, Pipelines), Xcode, Figma, Material 3, Slack, Confluence, Jira, Monday, WebSockets, gRPC, stakeholder management, delivery management, OKRs, continuous discovery, fasilitering av retrospektiver, innføring av agile prosesser, produktstrategi og endringsledelse. \\
+\end{longtable}
+
+
+\vspace{2em}
+
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{InlineX}
+& \textbf{Prosjekt:} Elias ble hentet inn som konsulent for å utvikle en applikasjon med hovedfokus på iOS, til bruk innen energi- og offshore-sektoren. \\
+Startupfasen &  Oppdraget startet som en hasteløsning for kunder uten internett, men utviklet seg raskt til å bli et strategisk produkt for selskapet. Allerede\\
+Aug.2022 - Des.2022 & første måned leverte han en proof of concept som senere ble videreutviklet til en fullverdig produksjonsløsning brukt på installasjoner i blant annet Australia, Malaysia, Saudi-Arabia, Equinor Kollsnes, Nyhavna og Angola. \\
+& \\
+& \textbf{Rolle:} Da Elias startet, bestod selskapet av kun åtte ansatte – uten etablert produktutviklingskultur, uten designer og med bare ham og én annen utvikler. Han tok derfor ansvaret for alle tekniske valg knyttet til mobilutviklingen. Allerede første måned leverte Elias en fungerende iOS-applikasjon til TestFlight, tilpasset bruk i offshore-miljøer uten internettilgang. Løsningen gjorde det mulig å hente og lagre data lokalt offshore, og deretter synkronisere automatisk når enheten koblet seg på nett onshore. Dette reduserte behovet for kostbar satellittbasert internettforbindelse og førte til betydelige besparelser. Der man tidligere kunne betale mellom 300 000 og 900 000 kroner per måned i internettkostnader per installasjon, gjorde Elias sin app, Insitu Sync, det mulig å arbeide fullstendig offline. Bidraget hadde dermed direkte økonomisk effekt for selskapet og ble et sentralt fundament for videreutviklingen av produktet og selskapets teknologisatsning. \\
+& \\
+& \textbf{Kompetanser:}  Swift, iOS, SwiftUI, UIKit, Combine, URLSession, WebSockets, JSONDecoder/Codable, Keychain, Figma, Azure DevOps (Git, Pipelines), Firebase Crashlytics, Live Activities, Dynamic Island, TestFlight, XCTest, XCTest UI, Fastlane, Docker, Kubernetes, Monday \\
+
+\end{longtable}
+
+
+\vspace{2em}
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{DNV} 
+& \textbf{Prosjekt:} Elias har utviklet nye funksjoner i DP-CAP og DYN-CAP applikasjonene, brukt til beregninger og sertifisering av dynamisk pos-\\
+Maritime Cybernetics Advisory & isjonering av skip. Han utviklet i Python/OpenCV basert på Watershed-metoden, som reduserte manuelt arbeid fra flere dager til sekunder, og som ble kritisk for sertifiseringsanalyser bestilt av kunder\\
+2021 -- 2022 & som Equinor. Dette økte lønnsomheten av disse rapportene massivt, med en fastpris på 100 000 NOK så tok det et par klikk å levere samme analyse som kunne ta opp til en uke før. \\
+& \\
+& \textbf{Rolle:} Systemutvikler, backend, frontend, bildebehandlingsingeniør. \\
+& \\
+& \textbf{Kompetanser:} TypeScript, React, ClojureScript, Reframe, Clojure, Java, Python (OpenCV), Leiningen, Jenkins, bildebehandling/Computer Vision, PID-regulator, Watershed algoritmen og klassisk bildebehandling, dynamisk posisjonering, sertifisering av DP-systemer, maritim domeneforståelse, General Arrangement tegninger. \\
+\end{longtable}
+
+
+\vspace{2em}
+
+% --- Erfaring ---
+\noindent
+\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
+\textbf{NTNU} 
+& \textbf{Prosjekt:} I masteroppgaven utviklet Elias en komplett digital tvilling av en bygning, kombinert med sensorteknologi, kunstig intelligens og \\
+2021 -- 2022  & virtuell virkelighet. Prosjektet demonstrerte flere modenhetsnivåer av digitale tvillinger – fra standalone, beskrivende og diagnostiske modeller, til prediktive og preskriptive modeller. Løsningen inkluderte blant annet 3D-modellering (Revit/3DS Max), Unity-integrasjon med sanntidsdata fra IoT-sensorer, maskinlæringsbaserte prediksjonsmodeller, samt VR-grensesnitt for interaktive demonstrasjoner. Oppgaven ble belønnet med Tekna-stipend, omtalt i Teknas magasin, og videre publisert som vitenskapelig artikkel i IEEE. \\
+& \\
+& \textbf{Kompetanser:} Digital Twin, Kunstig intelligens (ML, RNN, LSTM, ensemblemetoder), IoT \& sensorteknologi, Virtuell virkelighet (Unity, Oculus Quest 2), 3D-modellering (Revit, 3DS Max), Python, C\#, Datadrevet modellering, Prediksjon og simulering, Xgboost/Catboost/LightGBM, Tensorflow/Keras, Pandas, Numpy, Matplotlib, TwinMotion, Blender, SolidWorks, Unreal Engine 4, Anaconda, Jupyter Notebook, Scikit, CUDA, ARIMA, LSTM, JavaScript, Express.js, Node.js, Philips Hue, Netatmo Weather Station, Disruptive Technlogies Sensorer. \\
+\end{longtable}
+ 
+
+
+ 
+\end{document}
