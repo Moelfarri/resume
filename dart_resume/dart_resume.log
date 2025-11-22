@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  29 SEP 2025 07:26
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  22 NOV 2025 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,48 +888,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\ubuntu' on input line 203.
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 227--228
-[]|\TU/Roboto(0)/b/n/10 Prosjekt: \TU/Roboto(0)/m/n/10 I 2025 gikk InlineX inn i produksjonsfasen av Stream-
+
+[2]
+
+[3]
+Overfull \hbox (1.89563pt too wide) in paragraph at lines 387--389
+\TU/Roboto(0)/m/n/10 prediksjonsmodeller, samt VR-grensesnitt for interaktive demonstrasjoner. Oppgaven ble belønnet med Tekna-stipend,
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 229--230
-[]|\TU/Roboto(0)/m/n/10 dedikerte hardware-enheter med mobilapper og BLE-baserte IoT-
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-[]|\TU/Roboto(0)/m/n/10 Han fikk også på plass SwiftUI-baserte grafer, en egen
- []
-
-
-Underfull \hbox (badness 3623) in paragraph at lines 235--236
-\TU/Roboto(0)/m/n/10 AVFoundation/CameraX-plugin for kamera, og videre modning av
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 235--236
-\TU/Roboto(0)/m/n/10 leder for mobilteamet hadde Elias ansvar for onboarding, ressurs-
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 235--236
-\TU/Roboto(0)/m/n/10 planlegging, stakeholder management og leveranser. Han bidro i
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 238--239
-\TU/Roboto(0)/m/n/10 micro-frontends, in-house design system, 400+ custom lint-regler,
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 238--239
-\TU/Roboto(0)/m/n/10 codegen-verktøy, RxDart, Bluetooth Low Energy, Widgetbook, flut-
- []
-
-[2] [3] [4] [5]
-
-[6] (./dart_resume.aux)
+[4] (./dart_resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -938,12 +907,12 @@ Package rerunfilecheck Info: File `dart_resume.out' has not changed.
 (rerunfilecheck)             Checksum: 356B74E9C34F02D986E3F76615C49EA4;588.
  ) 
 Here is how much of TeX's memory you used:
- 30474 strings out of 473832
- 657276 string characters out of 5729481
- 1142447 words of memory out of 5000000
- 53073 multiletter control sequences out of 15000+600000
- 562825 words of font info for 63 fonts, out of 8000000 for 9000
+ 30469 strings out of 473832
+ 657334 string characters out of 5729481
+ 1141203 words of memory out of 5000000
+ 53066 multiletter control sequences out of 15000+600000
+ 562841 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,11n,98p,1323b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,98p,1300b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on dart_resume.pdf (6 pages).
+Output written on dart_resume.pdf (4 pages).

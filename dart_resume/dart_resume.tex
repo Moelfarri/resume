@@ -203,118 +203,194 @@ Apr.2023 &
 \section{{\Huge \ubuntu PROSJEKTER}}
 
 
-% --- Erfaring ---
+% --- InlineX AS ---
+{\Large \textbf{InlineX AS}}
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{1em}
+
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{InlineX}
-& \textbf{Prosjekt:} tekst kommer \\
-Produksjonsfasen & \\
-Jan.2026 - Jun.2026 & \\
-& \\
-&  \textbf{Rolle:} \\
-& \\
-& \textbf{Kompetanser:} \\
-\end{longtable}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Produksjonsfasen} & Jan.2026 - Jun.2026 \\
+\end{tabularx}
 
-\vspace{2em}
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
 
-
-
-% --- Erfaring ---
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  
-\textbf{InlineX} 
-& \textbf{Prosjekt:} I 2025 gikk InlineX inn i produksjonsfasen av Stream-prosjektet. Selskapet har blitt en scale-up og  har vokst til å være 21 \\
-Produksjonsfasen &  ansatte. Målet med prosjektet var å videreutvikle selskapets native prosjekter for iOS og Android, redusere kostnader ved å erstatte \\
-Jan.2025 -- Des.2025 &  dedikerte hardware-enheter med mobilapper og BLE-baserte IoT-løsninger, samt gjøre distribusjon og vedlikehold mer effektivt. InlineX Stream ble bygget for å digitalisere testing av sikkerhetsventiler (0–400 bar) i energi- og offshore-sektoren, og innen Q4 2025 ble løsningen lansert til betalende kunder. Som Tech Lead for mobil hadde Elias det overordnede ansvaret for monorepo-arkitekturen, programvarekvalitet og tekniske beslutninger. Prosjektet inkluderte videreutvikling av mobil monorepoen med tre apper, 20+ interne pakker, tre first-party plugins, og et stadig mer modent in-house designsystem. \\
-& \\
-& Elias etablerte en vertical slices og  micro-frontends arkitektur for å gjøre det enkelst mulig for nye utviklere å komme i gang og bidra i den etterhvert voksende native infrastrukturen. Dette gjorde at utviklere på teamet kunne jobbe på spesifikke features isolert fra alle andre kontekster, og dermed øke produktiviteten. Han sikret arkitekturens robusthet gjennom 400+ custom lint-regler, codegen-verktøy og dokumentasjon. Dette sikret at teamet kunne komfortabelt skrive kode de var trygge på, enten med Flutter/Dart, rent Native med Kotlin/Swift eller annen relevant teknologi. Teamet var blitt et Native Platforms team. \\
-& \\
-& I tillegg så fikk Elias på plass en del agentisk AI infrastruktur (relevant MCP-kontekst, MD-dokumentasjon, subagenter, etc) som gjorde det enkelt å tilrettelegge for utviklerne og bruke verktøyet de likte best (Claude Code, GitHub Copilot, Gemini m.fl.).  \\
-& \\
-& Han fikk også på plass SwiftUI-baserte grafer, en egen AVFoundation/CameraX-plugin for kamera, og videre modning av CoreBluetooth- og Android BLE-koden for stabilitet i produksjon. Som leder for mobilteamet hadde Elias ansvar for onboarding, ressursplanlegging, stakeholder management og leveranser. Han bidro i over 20 tekniske intervjuer for mobil, embedded og cloud-roller, og bidro aktivt i selskapets oppskalering. Han satte opp en self-hosted CI/CD-agent (M4 Mac Mini) for signering og distribusjon til TestFlight og Google Play, samt for å kjøre tunge E2E-tester (Maestro) som ikke kunne håndteres på Microsofts hosted agenter. Han samarbeidet med jurister om privacy policy og GDPR compliance, flyttet appene fra privat appstore til offisielle appstores for å redusere kostnader, og sikret samtidig at InlineX Stream og de andre applikasjonene kunne drives og videreutvikles trygt i en produksjonssetting. \\
-& \textbf{Rolle:} Tech Lead, mobilutvikler, prosjektleder. \\
-& \\
-& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, iOS, Android, CoreBluetooth, Android Bluetooth, ESP32, AVFoundation, CameraX, Objective-C, Java, C, IoT-integrasjon, mobil monorepo-arkitektur, vertical slices, micro-frontends, in-house design system, 400+ custom lint-regler, codegen-verktøy, RxDart, Bluetooth Low Energy, Widgetbook, flutter\_blue\_plus, Pub workspaces, Melos, Mason, UIKit, Android Settings Intents, DCM, Pigeon, Shorebird, Drift ORM/SQLite, Freezed, Build Runner, Golden testing, Unit Tests, Integration Tests, VSCode, Xcode, Android Studio, CI/CD (Azure DevOps, Fastlane, Maestro, xcodebuild, Fastlane Match, Fastlane Screenshot Automation, Fastlane Beta Deployment), self-hosted Mac Mini agent, TestFlight, Google Play Console, App Store Connect API, Firebase Crashlytics, Firebase Analytics, Firebase Performance Monitoring, Microsoft Clarity, Privacy Manifest, Privacy Policy, GDPR compliance, Google Cloud Console, stakeholder management, teamledelse, onboarding, rekruttering, backlog refinement, delivery management, produktstrategi, continuous discovery \& delivery, trio-modellen, Claude Code, Gemini, Copilot, Claude Desktop, ChatGPT Desktop. \\
-\end{longtable}
+\textbf{Prosjekt:} tekst kommer
 
-\vspace{2em}
+\vspace{0.5em}
 
-% --- Erfaring ---
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{InlineX}
-& \textbf{Prosjekt:} I 2024 ledet Elias oppstarten av InlineX Stream, selskapets hittil største mobilprosjekt, samtidig som han hadde ansvar for drift \\
-Modningsfasen & av Insitu Sync. Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som formål å erstatte tidligere \\
-Jan.2024 - Des.2024 & industrielle enheter til en verdi av rundt 2 millioner NOK med en løsning basert på app + Bluetooth-krets (ESP32). Resultatet var en reduksjon i produksjonskostnader til 150 000 NOK per enhet, lavere vedlikeholdskostnader og enklere hardware stack. På dette tidspunktet består teamet av en stadig voksende produktavdeling med folk på embedded, cloud, mobil, design og prosjektledelse. På teknisk side bygges den nye "Stream" appen av et inhouse design komponent bibliotek, first party native plugins og mange andre pakker takket være en monorepo arkitektur. Den viktigste featuren blir en tredelt BLE-løsning (native plugins i Swift/Kotlin, businesslogikk med egen GATT-protokoll, og UI/UX-lag).\\
-& \\
-&  \textbf{Rolle:} Som App Tech Lead hadde Elias overordnet ansvar for tre apper, teknisk retning for mobilavdelingen og ledelse av en annen juniorutvikler. Han drev rekruttering, opplæring, tekniske beslutninger og fungerte som bindeledd mellom produkt, design og ledelse. Han fasiliterte retroer, jobbet med OKRs, kvartalsvis estimater, stakeholder management og leveranser, samt bidro til selskapets produktstrategi og navnearbeid. I samarbeid med ledelsen bidro han til å transformere selskapet videre til et continuous discovery-produkt scale-up, hvor man organiserte arbeidet i trioer (produkteier, designer, tech lead) og bidro i å etablere et Domain Driven Design-rammeverk for felles begrepsbruk på tvers av organisasjonen. \\
-& \\
-& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, Jetpack Compose, Objective-C, Android, iOS, Linux, ESP32, CoreBluetooth, Android Bluetooth API, BLE-arkitektur, gRPC, WebSockets, SQLite, Drift ORM, RxDart, Freezed, BLoC, Melos, Mason, Widgetbook, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi.\\
-\end{longtable}
+\textbf{Rolle:}
 
+\vspace{0.5em}
 
+\noindent
+\textbf{Kompetanser:}
 
 \vspace{2em}
 
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{InlineX}
-& \textbf{Prosjekt:} I 2023 fortsatte Elias arbeidet med InlineX Mobile og tok  initiativ til å restrukturere kodebasen til et monorepo for å støtte \\
-Restruktureringsfasen & utviklingen av flere enterprise nivå applikasjoner. Han utviklet blant annet Insitu Sync,  en applikasjon med robust online/offline-synkronisering,\\
-Jan.2023 - Des.2023 & og bygde opp et enkelt designsystem i Figma inspirert av Material 3 og Atomic Design for gjenbruk av komponenter på tvers av web og mobil. Dette la grunnlaget for at teamet kunne levere nye produkter raskere og med høyere kvalitet. Samtidig tok Elias en nøkkelrolle i selskapets organisatoriske transformasjon. Han fikk ledelsen med på å hente inn nye roller – en ekstra utvikler, en designer og en prosjektleder (på kortere oppdrag) – noe som gjorde det mulig å etablere en mer moden produktutviklingskultur. Prosjektet markerte et vendepunkt der InlineX beveget seg fra prosjektorienterte fossefallsleveranser til å bygge en produktavdeling basert på agile prosesser, kontinuerlig discovery og tverrfaglig samarbeid.\\
-& \\
-& \textbf{Rolle:} Elias var både utvikler, arkitekt og endringsagent. Han tok initiativ til å etablere moderne arbeidsprosesser, fasiliterte retrospektiver og bidro aktivt til at selskapet innførte standups, sprintarbeid, OKRs, continuous discovery-trioer og stakeholder management. Han tok ansvar for å koble utvikling tettere på produkt- og forretningssiden, og sørget for at teamet hadde verktøyene og prosessene som trengtes for å skalere. \\
-& \\
-& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Melos (monorepo), Widgetbook, Mason, Drift ORM/SQLite, RxDart, Freezed, Build Runner, Firebase Crashlytics, Azure DevOps (Git, Pipelines), VS Code, Android Studio, Xcode, Figma (Material 3, Atomic Design), Slack, Confluence, Jira, Monday, WebSockets, gRPC, stakeholder management, delivery management, OKRs, continuous discovery, fasilitering av retrospektiver, innføring av agile prosesser, produktstrategi og endringsledelse. \\
-\end{longtable}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Produksjonsfasen} & Jan.2025 -- Des.2025 \\
+\end{tabularx}
 
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\textbf{Prosjekt:} I 2025 gikk InlineX inn i produksjonsfasen av Stream-prosjektet. Selskapet har blitt en scale-up og  har vokst til å være 21 ansatte. Målet med prosjektet var å videreutvikle selskapets native prosjekter for iOS og Android, redusere kostnader ved å erstatte dedikerte hardware-enheter med mobilapper og BLE-baserte IoT-løsninger, samt gjøre distribusjon og vedlikehold mer effektivt. InlineX Stream ble bygget for å digitalisere testing av sikkerhetsventiler (0–400 bar) i energi- og offshore-sektoren, og innen Q4 2025 ble løsningen lansert til betalende kunder. Som Tech Lead for mobil hadde Elias det overordnede ansvaret for monorepo-arkitekturen, programvarekvalitet og tekniske beslutninger. Prosjektet inkluderte videreutvikling av mobil monorepoen med tre apper, 20+ interne pakker, tre first-party plugins, og et stadig mer modent in-house designsystem.
+
+\vspace{0.5em}
+Elias etablerte en vertical slices og  micro-frontends arkitektur for å gjøre det enkelst mulig for nye utviklere å komme i gang og bidra i den etterhvert voksende native infrastrukturen. Dette gjorde at utviklere på teamet kunne jobbe på spesifikke features isolert fra alle andre kontekster, og dermed øke produktiviteten. Han sikret arkitekturens robusthet gjennom 400+ custom lint-regler, codegen-verktøy og dokumentasjon. Dette sikret at teamet kunne komfortabelt skrive kode de var trygge på, enten med Flutter/Dart, rent Native med Kotlin/Swift eller annen relevant teknologi. Teamet var blitt et Native Platforms team.
+
+I tillegg så fikk Elias på plass en del agentisk AI infrastruktur (relevant MCP-kontekst, MD-dokumentasjon, subagenter, etc) som gjorde det enkelt å tilrettelegge for utviklerne og bruke verktøyet de likte best (Claude Code, GitHub Copilot, Gemini m.fl.).
+
+Han fikk også på plass SwiftUI-baserte grafer, en egen AVFoundation/CameraX-plugin for kamera, og videre modning av CoreBluetooth- og Android BLE-koden for stabilitet i produksjon. Som leder for mobilteamet hadde Elias ansvar for onboarding, ressursplanlegging, stakeholder management og leveranser. Han bidro i over 20 tekniske intervjuer for mobil, embedded og cloud-roller, og bidro aktivt i selskapets oppskalering. Han satte opp en self-hosted CI/CD-agent (M4 Mac Mini) for signering og distribusjon til TestFlight og Google Play, samt for å kjøre tunge E2E-tester (Maestro) som ikke kunne håndteres på Microsofts hosted agenter. Han samarbeidet med jurister om privacy policy og GDPR compliance, flyttet appene fra privat appstore til offisielle appstores for å redusere kostnader, og sikret samtidig at InlineX Stream og de andre applikasjonene kunne drives og videreutvikles trygt i en produksjonssetting.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Rolle:} Tech Lead, mobilutvikler, prosjektleder.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, iOS, Android, CoreBluetooth, Android Bluetooth, ESP32, AVFoundation, CameraX, Objective-C, Java, C, IoT-integrasjon, mobil monorepo-arkitektur, vertical slices, micro-frontends, in-house design system, 400+ custom lint-regler, codegen-verktøy, RxDart, Bluetooth Low Energy, Widgetbook, flutter\_blue\_plus, Pub workspaces, Melos, Mason, UIKit, Android Settings Intents, DCM, Pigeon, Shorebird, Drift ORM/SQLite, Freezed, Build Runner, Golden testing, Unit Tests, Integration Tests, VSCode, Xcode, Android Studio, CI/CD (Azure DevOps, Fastlane, Maestro, xcodebuild, Fastlane Match, Fastlane Screenshot Automation, Fastlane Beta Deployment), self-hosted Mac Mini agent, TestFlight, Google Play Console, App Store Connect API, Firebase Crashlytics, Firebase Analytics, Firebase Performance Monitoring, Microsoft Clarity, Privacy Manifest, Privacy Policy, GDPR compliance, Google Cloud Console, stakeholder management, teamledelse, onboarding, rekruttering, backlog refinement, delivery management, produktstrategi, continuous discovery \& delivery, trio-modellen, Claude Code, Gemini, Copilot, Claude Desktop, ChatGPT Desktop.
 
 \vspace{2em}
 
-
-% --- Erfaring ---
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{InlineX}
-& \textbf{Prosjekt:} Elias ble hentet inn som konsulent for å utvikle en kryssplattform applikasjon for iOS, Android og Linux, til bruk innen  energi- og\\
-Startupfasen & offshore-sektoren. Oppdraget startet som en hasteløsning for kunder uten internett, men utviklet seg til å bli et strategisk produkt for \\
-Aug.2022 - Des.2022 & selskapet. Elias besluttet å ta i bruk Flutter, og leverte allerede første måned en proof of concept, "InlineX Mobile", som fortsatt brukes i produksjon i dag. Løsningen ble tatt i bruk på installasjoner i blant annet Australia, Malaysia, Saudi-Arabia, Equinor Kollsnes, Nyhavna og Angola. Prosjektet markerte en av de første gangene Flutter antageligvis ble benyttet i oljebransjen.\\
-& \\
-& \textbf{Rolle:} Da Elias startet, bestod selskapet av kun åtte ansatte – uten etablert produktutviklingskultur, uten designer, og med kun to utviklere totalt, inklusiv Elias. Han ble derfor ikke bare mobilutvikler, men også arkitekt, strateg og pedagog. Elias hadde en sentral rolle i å forme både teknologivalg, utviklingspraksis og produktstrategi, og han konsulterte ledelsen i hvordan selskapet burde bevege seg fra ren bestillingsbasert utvikling til et moderne produkthus med egen produktavdeling. Han etablerte infrastruktur, innførte smidige utviklingsmetoder, og bygde opp grunnlaget for et bærekraftig produktmiljø. Over tid gikk han fra konsulent til å bli en nøkkelperson i selskapets teknologisatsning, med ansvar for leveranser og veiledning av andre utviklere. \\
-& \\
-& \textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Android, iOS, Linux, Figma, Azure DevOps (Git, Pipelines), Firebase Crashlytics, SQLite, Riverpod, BLoC pattern, WebSockets, REST, RxDart, gRPC, KeyChain, MDM, Material Design 3, Widgetbook, Melos, Mason, Drift ORM, Shorebird, Pigeon, FFIgen, SwiftUI, Live Activities, Dynamic Island, TestFlight, Google Play Console, C++, BLE, Docker, Kubernetes, Maestro (integrasjonstesting), CI/CD, moderne produktutvikling og arkitektur. \\
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Modningsfasen} & Jan.2024 - Des.2024 \\
+\end{tabularx}
 
-\end{longtable}
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
 
+\noindent
+\textbf{Prosjekt:} I 2024 ledet Elias oppstarten av InlineX Stream, selskapets hittil største mobilprosjekt, samtidig som han hadde ansvar for drift av Insitu Sync. Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som formål å erstatte tidligere industrielle enheter til en verdi av rundt 2 millioner NOK med en løsning basert på app + Bluetooth-krets (ESP32). Resultatet var en reduksjon i produksjonskostnader til 150 000 NOK per enhet, lavere vedlikeholdskostnader og enklere hardware stack. På dette tidspunktet består teamet av en stadig voksende produktavdeling med folk på embedded, cloud, mobil, design og prosjektledelse. På teknisk side bygges den nye "Stream" appen av et inhouse design komponent bibliotek, first party native plugins og mange andre pakker takket være en monorepo arkitektur. Den viktigste featuren blir en tredelt BLE-løsning (native plugins i Swift/Kotlin, businesslogikk med egen GATT-protokoll, og UI/UX-lag).
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Rolle:} Som App Tech Lead hadde Elias overordnet ansvar for tre apper, teknisk retning for mobilavdelingen og ledelse av en annen juniorutvikler. Han drev rekruttering, opplæring, tekniske beslutninger og fungerte som bindeledd mellom produkt, design og ledelse. Han fasiliterte retroer, jobbet med OKRs, kvartalsvis estimater, stakeholder management og leveranser, samt bidro til selskapets produktstrategi og navnearbeid. I samarbeid med ledelsen bidro han til å transformere selskapet videre til et continuous discovery-produkt scale-up, hvor man organiserte arbeidet i trioer (produkteier, designer, tech lead) og bidro i å etablere et Domain Driven Design-rammeverk for felles begrepsbruk på tvers av organisasjonen.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, SwiftUI, Jetpack Compose, Objective-C, Android, iOS, Linux, ESP32, CoreBluetooth, Android Bluetooth API, BLE-arkitektur, gRPC, WebSockets, SQLite, Drift ORM, RxDart, Freezed, BLoC, Melos, Mason, Widgetbook, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi.
 
 \vspace{2em}
 
-% --- Erfaring ---
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{DNV} 
-& \textbf{Prosjekt:} Elias har utviklet nye funksjoner i DP-CAP og DYN-CAP applikasjonene, brukt til beregninger og sertifisering av dynamisk pos-\\
-Maritime Cybernetics Advisory & isjonering av skip. Han utviklet i Python/OpenCV basert på Watershed-metoden, som reduserte manuelt arbeid fra flere dager til sekunder, og som ble kritisk for sertifiseringsanalyser bestilt av kunder\\
-2021 -- 2022 & som Equinor. Dette økte lønnsomheten av disse rapportene massivt, med en fastpris på 100 000 NOK så tok det et par klikk å levere samme analyse som kunne ta opp til en uke før. \\
-& \\
-& \textbf{Rolle:} Systemutvikler, backend, frontend, bildebehandlingsingeniør. \\
-& \\
-& \textbf{Kompetanser:} TypeScript, React, ClojureScript, Reframe, Clojure, Java, Python (OpenCV), Leiningen, Jenkins, bildebehandling/Computer Vision, PID-regulator, Watershed algoritmen og klassisk bildebehandling, dynamisk posisjonering, sertifisering av DP-systemer, maritim domeneforståelse, General Arrangement tegninger. \\
-\end{longtable}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Restruktureringsfasen} & Jan.2023 - Des.2023 \\
+\end{tabularx}
 
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\textbf{Prosjekt:} I 2023 fortsatte Elias arbeidet med InlineX Mobile og tok  initiativ til å restrukturere kodebasen til et monorepo for å støtte utviklingen av flere enterprise nivå applikasjoner. Han utviklet blant annet Insitu Sync,  en applikasjon med robust online/offline-synkronisering, og bygde opp et enkelt designsystem i Figma inspirert av Material 3 og Atomic Design for gjenbruk av komponenter på tvers av web og mobil. Dette la grunnlaget for at teamet kunne levere nye produkter raskere og med høyere kvalitet. Samtidig tok Elias en nøkkelrolle i selskapets organisatoriske transformasjon. Han fikk ledelsen med på å hente inn nye roller – en ekstra utvikler, en designer og en prosjektleder (på kortere oppdrag) – noe som gjorde det mulig å etablere en mer moden produktutviklingskultur. Prosjektet markerte et vendepunkt der InlineX beveget seg fra prosjektorienterte fossefallsleveranser til å bygge en produktavdeling basert på agile prosesser, kontinuerlig discovery og tverrfaglig samarbeid.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Rolle:} Elias var både utvikler, arkitekt og endringsagent. Han tok initiativ til å etablere moderne arbeidsprosesser, fasiliterte retrospektiver og bidro aktivt til at selskapet innførte standups, sprintarbeid, OKRs, continuous discovery-trioer og stakeholder management. Han tok ansvar for å koble utvikling tettere på produkt- og forretningssiden, og sørget for at teamet hadde verktøyene og prosessene som trengtes for å skalere.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Melos (monorepo), Widgetbook, Mason, Drift ORM/SQLite, RxDart, Freezed, Build Runner, Firebase Crashlytics, Azure DevOps (Git, Pipelines), VS Code, Android Studio, Xcode, Figma (Material 3, Atomic Design), Slack, Confluence, Jira, Monday, WebSockets, gRPC, stakeholder management, delivery management, OKRs, continuous discovery, fasilitering av retrospektiver, innføring av agile prosesser, produktstrategi og endringsledelse.
 
 \vspace{2em}
 
-% --- Erfaring ---
 \noindent
-\begin{longtable}{@{}p{4cm}p{11cm}@{}}  % venstre = bredere, høyre = beskrivelse
-\textbf{NTNU} 
-& \textbf{Prosjekt:} I masteroppgaven utviklet Elias en komplett digital tvilling av en bygning, kombinert med sensorteknologi, kunstig intelligens og \\
-2021 -- 2022  & virtuell virkelighet. Prosjektet demonstrerte flere modenhetsnivåer av digitale tvillinger – fra standalone, beskrivende og diagnostiske modeller, til prediktive og preskriptive modeller. Løsningen inkluderte blant annet 3D-modellering (Revit/3DS Max), Unity-integrasjon med sanntidsdata fra IoT-sensorer, maskinlæringsbaserte prediksjonsmodeller, samt VR-grensesnitt for interaktive demonstrasjoner. Oppgaven ble belønnet med Tekna-stipend, omtalt i Teknas magasin, og videre publisert som vitenskapelig artikkel i IEEE. \\
-& \\
-& \textbf{Kompetanser:} Digital Twin, Kunstig intelligens (ML, RNN, LSTM, ensemblemetoder), IoT \& sensorteknologi, Virtuell virkelighet (Unity, Oculus Quest 2), 3D-modellering (Revit, 3DS Max), Python, C\#, Datadrevet modellering, Prediksjon og simulering, Xgboost/Catboost/LightGBM, Tensorflow/Keras, Pandas, Numpy, Matplotlib, TwinMotion, Blender, SolidWorks, Unreal Engine 4, Anaconda, Jupyter Notebook, Scikit, CUDA, ARIMA, LSTM, JavaScript, Express.js, Node.js, Philips Hue, Netatmo Weather Station, Disruptive Technlogies Sensorer. \\
-\end{longtable}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Startupfasen} & Aug.2022 - Des.2022 \\
+\end{tabularx}
+
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\textbf{Prosjekt:} Elias ble hentet inn som konsulent for å utvikle en kryssplattform applikasjon for iOS, Android og Linux, til bruk innen  energi- og offshore-sektoren. Oppdraget startet som en hasteløsning for kunder uten internett, men utviklet seg til å bli et strategisk produkt for selskapet. Elias besluttet å ta i bruk Flutter, og leverte allerede første måned en proof of concept, "InlineX Mobile", som fortsatt brukes i produksjon i dag. Løsningen ble tatt i bruk på installasjoner i blant annet Australia, Malaysia, Saudi-Arabia, Equinor Kollsnes, Nyhavna og Angola. Prosjektet markerte en av de første gangene Flutter antageligvis ble benyttet i oljebransjen.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Rolle:} Da Elias startet, bestod selskapet av kun åtte ansatte – uten etablert produktutviklingskultur, uten designer, og med kun to utviklere totalt, inklusiv Elias. Han ble derfor ikke bare mobilutvikler, men også arkitekt, strateg og pedagog. Elias hadde en sentral rolle i å forme både teknologivalg, utviklingspraksis og produktstrategi, og han konsulterte ledelsen i hvordan selskapet burde bevege seg fra ren bestillingsbasert utvikling til et moderne produkthus med egen produktavdeling. Han etablerte infrastruktur, innførte smidige utviklingsmetoder, og bygde opp grunnlaget for et bærekraftig produktmiljø. Over tid gikk han fra konsulent til å bli en nøkkelperson i selskapets teknologisatsning, med ansvar for leveranser og veiledning av andre utviklere.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} Flutter, Dart, Kotlin, Swift, Android, iOS, Linux, Figma, Azure DevOps (Git, Pipelines), Firebase Crashlytics, SQLite, Riverpod, BLoC pattern, WebSockets, REST, RxDart, gRPC, KeyChain, MDM, Material Design 3, Widgetbook, Melos, Mason, Drift ORM, Shorebird, Pigeon, FFIgen, SwiftUI, Live Activities, Dynamic Island, TestFlight, Google Play Console, C++, BLE, Docker, Kubernetes, Maestro (integrasjonstesting), CI/CD, moderne produktutvikling og arkitektur.
+
+\vspace{2em}
+
+% --- DNV ---
+{\Large \textbf{DNV}}
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{1em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Maritime Cybernetics Advisory} & 2021 -- 2022 \\
+\end{tabularx}
+
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\textbf{Prosjekt:} Elias har utviklet nye funksjoner i DP-CAP og DYN-CAP applikasjonene, brukt til beregninger og sertifisering av dynamisk posisjonering av skip. Han utviklet i Python/OpenCV basert på Watershed-metoden, som reduserte manuelt arbeid fra flere dager til sekunder, og som ble kritisk for sertifiseringsanalyser bestilt av kunder som Equinor. Dette økte lønnsomheten av disse rapportene massivt, med en fastpris på 100 000 NOK så tok det et par klikk å levere samme analyse som kunne ta opp til en uke før.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Rolle:} Systemutvikler, backend, frontend, bildebehandlingsingeniør.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} TypeScript, React, ClojureScript, Reframe, Clojure, Java, Python (OpenCV), Leiningen, Jenkins, bildebehandling/Computer Vision, PID-regulator, Watershed algoritmen og klassisk bildebehandling, dynamisk posisjonering, sertifisering av DP-systemer, maritim domeneforståelse, General Arrangement tegninger.
+
+\vspace{2em}
+
+% --- NTNU ---
+{\Large \textbf{NTNU}}
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{1em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Masteroppgave} & 2021 -- 2022 \\
+\end{tabularx}
+
+\vspace{0.3em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\textbf{Prosjekt:} I masteroppgaven utviklet Elias en komplett digital tvilling av en bygning, kombinert med sensorteknologi, kunstig intelligens og virtuell virkelighet. Prosjektet demonstrerte flere modenhetsnivåer av digitale tvillinger – fra standalone, beskrivende og diagnostiske modeller, til prediktive og preskriptive modeller. Løsningen inkluderte blant annet 3D-modellering (Revit/3DS Max), Unity-integrasjon med sanntidsdata fra IoT-sensorer, maskinlæringsbaserte prediksjonsmodeller, samt VR-grensesnitt for interaktive demonstrasjoner. Oppgaven ble belønnet med Tekna-stipend, omtalt i Teknas magasin, og videre publisert som vitenskapelig artikkel i IEEE.
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Kompetanser:} Digital Twin, Kunstig intelligens (ML, RNN, LSTM, ensemblemetoder), IoT \& sensorteknologi, Virtuell virkelighet (Unity, Oculus Quest 2), 3D-modellering (Revit, 3DS Max), Python, C\#, Datadrevet modellering, Prediksjon og simulering, Xgboost/Catboost/LightGBM, Tensorflow/Keras, Pandas, Numpy, Matplotlib, TwinMotion, Blender, SolidWorks, Unreal Engine 4, Anaconda, Jupyter Notebook, Scikit, CUDA, ARIMA, LSTM, JavaScript, Express.js, Node.js, Philips Hue, Netatmo Weather Station, Disruptive Technlogies Sensorer.
  
 
 
