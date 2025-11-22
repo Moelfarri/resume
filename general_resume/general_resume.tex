@@ -43,119 +43,96 @@
 
 \begin{document}
 % --- Side 1 starter her fra ---
+\thispagestyle{empty}
 
-% Space before content
-\vspace{3em}
+% ========= TOP HEADER =========
+\vspace*{1em}
 
-\begin{paracol}{2}
-% ----- Left column -----
-\begin{flushleft}
-    % Profile picture
-    \begin{tikzpicture}
-     \clip (0,1.5) circle (2cm); % adjust size (radius)
-     \node at (0,0) {\includegraphics[width=5cm]{../portrait.jpg}};
-    \end{tikzpicture}
-
-    % a bar between image and name
-    \vspace{1em}
-    \noindent\rule{4cm}{10pt}
-    
-
-    \vspace{1.5em}
-    {\Huge \ubuntu{Elias Elfarri}} \\
-    \vspace{0.5em}
-    
-    \begin{tcolorbox}[
-        colback=white,       % background color
-        colframe=white,      % border color
-        boxrule=0.0pt,       % border thickness
-        arc=2mm,             % rounded corners
-        width=0.85\linewidth,% make box narrower than column
-        left=0mm, right=2mm, top=1mm, bottom=1mm % inner padding
-        ]
-    
-    Elias er en mobilutvikler med 
-    fire års erfaring fra både native-utvikling
-     i Swift og Kotlin og kryssplattform med Flutter/Dart.
-      Han har bygget opp mobilteam,
-       ledet utviklingen av skalerbare
-        kodebaser og publisert syv apper 
-        på App Store og Google Play. 
-        Med erfaring som spenner fra BLE,
-         kamera og sanntids grafer til widgets 
-         og spesialisert hardware-integrasjon,
-          behersker han hele spekteret av
-           mobilutvikling.
-      Han er kjent som initiativrik, 
-      reflektert og har gode pedagogiske evner.
-       Elias leder Flutter Meetup-nettverket i 
-       Oslo/Norge med over 500 medlemmer,
-        hvor han arrangerer samlinger, 
-        kurs og hackathons. 
-        Dette engasjementet 
-        gjør ham til en pådriver som både løfter
-         prosjekter og kolleger.
-    \end{tcolorbox}
-\end{flushleft}
-
-\switchcolumn
-
-\vspace{5em}
 \begin{center}
-    
+    {\Huge \textbf{\ubuntu{Elias Elfarri}}}\\[0.5em]
+    {\large \ubuntu{Mobilutvikler / Tech Lead}}\\[0.75em]
+    \normalsize
+    moelfarri@gmail.com \textbullet\ 
+    45 18 27 12 \textbullet\ 
+    Oslo
 \end{center}
-\vspace{2em}
 
-% ----- Right column -----
- 
-\section{\ubuntu ERFARING}
-\renewcommand{\arraystretch}{1.3} % Spacing between rows
-\begin{tabularx}{\columnwidth}{@{}lX@{}}
-2022 -- d.d & Fink AS, Mobilutvikler \\
-2023 -- 2025 & Fink AS, Fagansvarlig Mobilutvikling \\
-2021 -- 2022 & DNV, Frontend utvikler \\
-2019 -- 2020 & Jenteprosjektet Ada, Prosjekt assistent \\
-2018 -- 2022 & SIT, Team leder \\
-2017 -- 2018 & NVFT AS, Promotør \\
-2015 -- 2016 & Oslo Kommune, Hjelpepleier \\
+\vspace{1.5em}
+\noindent
+% ========= SHORT PROFILE (like the example intro paragraph) =========
+Sivilingeniør i kybernetikk og robotikk som de siste årene har jobbet som  tech lead, mobilutvikler og fagansvarlig. 
+Jeg har erfaring fra både native-utvikling i \textbf{Swift} og \textbf{Kotlin} og kryssplattform med \textbf{Flutter/Dart}, 
+og har vært med på å bygge opp mobilteam, etablere monorepo-arkitektur og utvikle skalerbare kodebaser i produksjon.
+Jeg har levert industrielle løsninger innen energi- og offshore-sektoren med \textbf{BLE-basert IoT}, kamera, sanntidsgrafer 
+og integrasjon mot spesialisert hardware. Som faglig pådriver er jeg også arrangør og leder for \textbf{Flutter Oslo}-miljøet, 
+og holder kurs, foredrag og fagkvelder som løfter både prosjekter og kolleger.
+
+\vspace{1.75em}
+
+% ========= NØKKELKOMPETANSE =========
+\noindent
+{\Large \textbf{\ubuntu{Nøkkelkompetanse}}}\\[0.25em]
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.75em}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Tech lead}: Ansvar for teknisk retning, arkitektur, kodekvalitet, domenemodeller, design system, prosess og leveranser i mobilteam, samt onboarding, rekruttering og tett samarbeid med produkt og design.
+    \item \textbf{Mobilutvikling}: Fire års erfaring fra produksjonsprosjekter på iOS og Android med Swift, Kotlin og Flutter/Dart, inkludert publisering av flere apper til App Store og Google Play.
+    \item \textbf{Industriell IoT og BLE}: Erfaring med Bluetooth Low Energy, ESP32, egen GATT-protokoll, hardware-integrasjon og bruk av mobil som erstatning for kostbare industrielle enheter.
+    \item \textbf{Arkitektur og kvalitet}: Monorepo-arkitektur for mobil med flere apper, pakker og first-party plugins, in-house designsystem, codegen-verktøy og omfattende linting, tester og CI/CD.
+    \item \textbf{Faglig engasjement og formidling}: Leder Flutter Oslo med 500+ medlemmer, konferanse- og meetup-arrangør, foredragsholder og skribent om Flutter/Dart og moderne mobilutvikling.
+\end{itemize}
+
+\vspace{1.75em}
+
+% ========= KOMPETANSE (table like in the example) =========
+\noindent
+{\Large \textbf{\ubuntu{Kompetanse}}}\\[0.25em]
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.75em}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programmeringsspråk} & 
+Dart, Swift, Kotlin, Objective-C, Java, C, C\#, TypeScript, JavaScript, Python \\
+
+\textbf{Kunstig Intellegens} & 
+Claude Code, Gemini CLI, ChatGPT, Codex, Github Copilot, MCP server API-er \\
+
+\textbf{Rammeverk} & 
+Flutter, SwiftUI, UIKit, Jetpack Compose, Android SDK, RxDart, BLoC, Riverpod, 
+gRPC, WebSockets \\
+
+\textbf{Mobil \& IoT} &
+iOS, Android, Bluetooth Low Energy (CoreBluetooth, Android Bluetooth), ESP32, 
+kamera (AVFoundation, CameraX), Live Activities, Widgets, offline-synk (Drift/SQLite) \\
+
+\textbf{Verktøy \& DevOps} & 
+Xcode, Android Studio, VS Code, Azure DevOps, Git, CI/CD (Fastlane, xcodebuild, 
+TestFlight, Google Play Console), Maestro, Melos, Mason, Widgetbook, Shorebird \\
+
+\textbf{Sky \& analyse} &
+Firebase Crashlytics, Firebase Analytics, Firebase Performance, Google Cloud Console, 
+monitorering, logging og personvern (GDPR, Privacy Manifest, Privacy Policy) \\
+
+\textbf{Domener} &
+Energi- og offshore-sektor, industriell testing og verifikasjon, digitale tvillinger, 
+sanntidsdata fra sensorer og prosessanlegg \\
+
+\textbf{Språk} & 
+Norsk (morsmål), engelsk (flytende), fransk (middels), arabisk/Darija (morsmål), berber (morsmål)\\
 \end{tabularx}
 
-% space and line
-\vspace{0.5em} 
-\noindent\rule{\linewidth}{0.2pt}
+\vfill
 
-\section{\ubuntu Utdanning}
-\renewcommand{\arraystretch}{1.3} % Spacing between rows
-\begin{tabularx}{\columnwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
-2017 -- 2022 & Norges teknisk-naturvitenskapelige universitet, Master i kybernetikk og robotikk, Sivilingeniør \\
-2017 -- 2017 & Université de Caen Normandie, Utveksling \\
-2016 -- 2017 & Norges teknisk-naturvitenskapelige universitet, Årsstudium i Fransk språk og litteratur \\
-\end{tabularx}
-
-% space and line
-\vspace{0.5em} 
-\noindent\rule{\linewidth}{0.2pt}
-
-
-\section{\ubuntu Kunder}
-DNV, \hspace{0.1em} 
-InlineX, \hspace{0.1em} 
-Norges teknisk-naturvitenskapelige
-universitet
-
-% space and line
-\vspace{0.5em} 
-\noindent\rule{\linewidth}{0.2pt}
-
-\section{\ubuntu Roller}
-Tech lead, \hspace{0.1em}
-Mobilutvikler, \hspace{0.1em}
-Frontend utvikler, \hspace{0.1em}
-Fagansvarlig
-
-\end{paracol}
+% (Optional) a tiny footer line on page 1, similar to many consultant-CV-templates
+%\noindent\rule{\linewidth}{0.4pt}
+%\small{Oppdatert: \today}
 
 \newpage
+% --- Resten av CV-en din (erfaring, prosjekter, utdanning osv.) kan fortsette her ---
 % --- Side 2 starter her fra ---
 
  % --- Erfaring seksjon ---
