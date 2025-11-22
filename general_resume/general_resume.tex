@@ -48,15 +48,28 @@
 % ========= TOP HEADER =========
 \vspace*{1em}
 
-\begin{center}
+% --- Header with photo on the left and title on the right ---
+\vspace*{1em}
+
+\noindent
+\begin{minipage}[c]{0.25\textwidth}
+    \centering
+    \begin{tikzpicture}
+        \clip (0,1.5) circle (2cm); % adjust radius if needed
+        \node at (0,0) {\includegraphics[width=5cm]{../portrait.jpg}};
+    \end{tikzpicture}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.7\textwidth}
     {\Huge \textbf{\ubuntu{Elias Elfarri}}}\\[0.5em]
     {\large \ubuntu{Mobilutvikler / Tech Lead}}\\[0.75em]
     \normalsize
-    moelfarri@gmail.com \textbullet\ 
+    \href{mailto:moelfarri@gmail.com}{moelfarri@gmail.com} \textbullet\ 
     45 18 27 12 \textbullet\ 
     Oslo
-\end{center}
+\end{minipage}
 
+\vspace{1.5em}
 \vspace{1.5em}
 \noindent
 % ========= SHORT PROFILE (like the example intro paragraph) =========
