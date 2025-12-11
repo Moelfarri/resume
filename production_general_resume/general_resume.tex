@@ -1,0 +1,511 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref} % legg til i preamble
+
+% Fonts ---
+\usepackage{fontspec}
+\setmainfont{Roboto} % Change to your preferred font
+
+
+\newfontfamily\ubuntu[
+    Path = ../fonts/,
+    UprightFont = Ubuntu-Regular.ttf,
+    BoldFont    = Ubuntu-Bold.ttf,
+    ItalicFont  = Ubuntu-Italic.ttf,
+    BoldItalicFont = Ubuntu-BoldItalic.ttf
+]{Ubuntu}
+% Fonts ---
+
+% Section title style (uppercase, spaced)
+\titleformat{\section}{\bfseries\uppercase}{\thesection}{0.5em}{}
+
+% No numbering
+\setcounter{secnumdepth}{0}
+
+% Reduce space between items
+\setlist[itemize]{nosep,left=0pt}
+
+ 
+
+\begin{document}
+% --- Side 1 starter her fra ---
+\thispagestyle{empty}
+
+% ========= TOP HEADER =========
+\vspace*{1em}
+
+% --- Header with photo on the left and title on the right ---
+\vspace*{1em}
+
+\noindent
+\begin{minipage}[c]{0.25\textwidth}
+    \centering
+    \begin{tikzpicture}
+        \clip (0,1.5) circle (2cm); % adjust radius if needed
+        \node at (0,0) {\includegraphics[width=5cm]{../portrait.jpg}};
+    \end{tikzpicture}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.7\textwidth}
+    {\Huge \textbf{\ubuntu{Elias Elfarri}}}\\[0.5em]
+    {\large \ubuntu{Mobilutvikler / Tech Lead}}\\[0.75em]
+    \normalsize
+    \href{mailto:moelfarri@gmail.com}{moelfarri@gmail.com} \textbullet\ 
+    45 18 27 12 \textbullet\ 
+    Oslo
+\end{minipage}
+
+\vspace{1.5em}
+\vspace{1.5em}
+\noindent
+% ========= SHORT PROFILE (like the example intro paragraph) =========
+Sivilingeniør i kybernetikk og robotikk som de siste årene har jobbet som  tech lead, mobilutvikler og fagansvarlig. 
+Jeg har erfaring fra både native-utvikling i \textbf{Swift} og \textbf{Kotlin} og kryssplattform med \textbf{Flutter/Dart}, 
+og har vært med på å bygge opp mobilteam, etablere monorepo-arkitektur og utvikle skalerbare kodebaser i produksjon.
+Jeg har levert industrielle løsninger innen energi- og offshore-sektoren med \textbf{BLE-basert IoT}, kamera, sanntidsgrafer 
+og integrasjon mot spesialisert hardware. Som faglig pådriver er jeg også arrangør og leder for \textbf{Flutter Oslo}-miljøet, 
+og holder kurs, foredrag og fagkvelder som løfter både prosjekter og kolleger.
+
+\vspace{1.75em}
+
+% ========= NØKKELKOMPETANSE =========
+\noindent
+{\Large \textbf{\ubuntu{Nøkkelkompetanse}}}\\[0.25em]
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.75em}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Tech lead}: Ansvar for teknisk retning, arkitektur, kodekvalitet, domenemodeller, design system, prosess og leveranser i mobilteam, samt onboarding, rekruttering og tett samarbeid med produkt og design.
+    \item \textbf{Mobilutvikling}: Fire års erfaring fra produksjonsprosjekter på iOS og Android med Swift, Kotlin og Flutter/Dart, inkludert publisering av flere apper til App Store og Google Play.
+    \item \textbf{Industriell IoT og BLE}: Erfaring med Bluetooth Low Energy, ESP32, egen GATT-protokoll, hardware-integrasjon og bruk av mobil som erstatning for kostbare industrielle enheter.
+    \item \textbf{Arkitektur og kvalitet}: Monorepo-arkitektur for mobil med flere apper, pakker og first-party plugins, in-house designsystem, codegen-verktøy og omfattende linting, tester og CI/CD.
+    \item \textbf{Faglig engasjement og formidling}: Leder Flutter Oslo med 500+ medlemmer, konferanse- og meetup-arrangør, foredragsholder og skribent om Flutter/Dart og moderne mobilutvikling.
+\end{itemize}
+
+\vspace{1.75em}
+
+% ========= KOMPETANSE (table like in the example) =========
+\noindent
+{\Large \textbf{\ubuntu{Kompetanse}}}\\[0.25em]
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.75em}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programmeringsspråk} & 
+Dart, Swift, Kotlin, Objective-C, Java, C, C\#, TypeScript, JavaScript, Python \\
+
+\textbf{Kunstig Intellegens} & 
+Claude Code, Gemini CLI, ChatGPT, Codex, Github Copilot, MCP server API-er \\
+
+\textbf{Rammeverk} & 
+Flutter, SwiftUI, UIKit, Jetpack Compose, Android SDK, RxDart, BLoC, Riverpod, 
+gRPC, WebSockets \\
+
+\textbf{Mobil \& IoT} &
+iOS, Android, Bluetooth Low Energy (CoreBluetooth, Android Bluetooth), ESP32, 
+kamera (AVFoundation, CameraX), Live Activities, Widgets, offline-synk (Drift/SQLite) \\
+
+\textbf{Verktøy \& DevOps} & 
+Xcode, Android Studio, VS Code, Azure DevOps, Git, CI/CD (Fastlane, xcodebuild, 
+TestFlight, Google Play Console), Maestro, Melos, Mason, Widgetbook, Shorebird \\
+
+\textbf{Sky \& analyse} &
+Firebase Crashlytics, Firebase Analytics, Firebase Performance, Google Cloud Console, 
+monitorering, logging og personvern (GDPR, Privacy Manifest, Privacy Policy) \\
+
+\textbf{Domener} &
+Energi- og offshore-sektor, industriell testing og verifikasjon, digitale tvillinger, 
+sanntidsdata fra sensorer og prosessanlegg \\
+
+\textbf{Språk} & 
+Norsk (morsmål), engelsk (flytende), fransk (middels), arabisk/Darija (morsmål), berber (morsmål)\\
+\end{tabularx}
+
+\vfill
+
+% (Optional) a tiny footer line on page 1, similar to many consultant-CV-templates
+%\noindent\rule{\linewidth}{0.4pt}
+%\small{Oppdatert: \today}
+
+\newpage
+% --- Resten av CV-en din (erfaring, prosjekter, utdanning osv.) kan fortsette her ---
+% --- Side 2 starter her fra ---
+
+ % --- Erfaring seksjon ---
+\noindent
+{\Large Erfaring}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.5em} 
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+2022 -- d.d & Fink AS, Konsulent \\
+2023 -- 2025 & Fink AS, Fagansvarlig \\
+2021 -- 2022 & DNV, Frontend utvikler \\
+2019 -- 2020 & Jenteprosjektet Ada, Prosjekt assistent \\
+2018 -- 2022 & SIT, Team leder \\
+2017 -- 2018 & NVFT AS, Promotør \\
+2015 -- 2016 & Oslo Kommune, Hjelpepleier \\
+\end{tabularx}
+\vspace{1em}
+
+
+ % --- Prosjekter seksjon ---
+\noindent
+{\Large Prosjekter}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.5em} 
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+Jan.2026 - Jun.2026 & InlineX AS, Scale-up fasen \\
+Jan.2025 - Des.2025 & InlineX AS, Produksjonsfaesn \\
+Jan.2024 - Des.2024 & InlineX AS, Modningsfasen \\
+Jan.2023 - Des.2023 & InlineX AS, Restruktureringsfasen \\
+Aug.2022 - Des.2022 & InlineX AS, Startupfasen \\
+Jun.2021 - Jun.2022 & DNV, Maritime Cybernetics Advisory \\
+Aug.2021 - Juni.2022 & NTNU, Masteroppgave \\
+\end{tabularx}
+\vspace{1em}
+
+ % --- Utdanning seksjon ---
+\noindent
+{\Large Utdanning}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.5em} 
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+2017 -- 2022 & Norges teknisk-naturvitenskapelige universitet, Master i kybernetikk og robotikk, Sivilingeniør \\
+2017 -- 2017 & Université de Caen Normandie, Utveksling \\
+2016 -- 2017 & Norges teknisk-naturvitenskapelige universitet, Årsstudium i Fransk språk og litteratur \\
+\end{tabularx}
+\vspace{1em}
+
+
+
+
+ % --- Verv seksjon ---
+\noindent
+{\Large Verv}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.5em} 
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+2023 -- d.d & Flutter Oslo Meetup gruppe, Arrangør og leder \\
+2024 -- d.d & Flutter and Friends Conference Stockholm, Arrangør \\
+2018 -- 2019 & ISFiT, Dialog koordinator \\
+\end{tabularx}
+\vspace{1em}
+
+ % --- Publikasjoner seksjon ---
+\noindent
+{\Large Publikasjoner}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{0.5em} 
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+Sep.2025 & 
+Konferanseforedrag, Either This or That: Expressive Error-Handling in Dart \\
+Jan.2025 & 
+\href{https://www.kode24.no/artikkel/derfor-bor-du-velge-flutter-i-2025/82529763}{kode24 artikkel, Derfor bør du velge Flutter i 2025!} \\
+Nov.2024 & 
+\href{https://www.kode24.no/artikkel/mener-det-er-tull-at-det-ikke-satses-pa-flutter-men-dart-er-en-flaskehals/82169214}{kode24 artikkel, Mener det er tull at det ikke satses på Flutter: – Men Dart er en flaskehals} \\
+Apr.2023 & 
+\href{https://ieeexplore.ieee.org/document/10093855/citations?tabFilter=papers\#citations}{Publikasjon av masteroppgaven, Artificial Intelligence-Driven Digital Twin of a Modern House Demonstrated in Virtual Reality} \\
+\end{tabularx}
+\vspace{1em}
+
+
+\newpage
+% PROSJEEEKTER 
+% --- Stor tittel for prosjekter ---
+\section{{\Huge \ubuntu PROSJEKTER}}
+
+
+% --- InlineX AS ---
+{\Large \textbf{InlineX AS}}
+\vspace{-0.5em} % adjust as needed
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{1em}
+\noindent
+InlineX er en norsk startup/scale-up som utvikler industriell hardware og software som digitaliserer arbeids hverdagen til ventil teknikere i offshore anlegg, prosess anlegg og verksteder. Selskapet har kunder over hele verden med selskaper som Equinor, Aker, SLB, Chevron, Shell og mange flere. 
+
+
+\vspace{1em}
+
+ 
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+{\large Produksjonsfasen} & Jan.2025 - Des.2025 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+
+
+\noindent
+\underline{Rolle:} 
+\newline
+\noindent
+Tech Lead, mobilutvikler, delivery og prosess ledelse.
+
+\vspace{0.5em}
+
+\noindent
+\underline{Kompetanser:} 
+\newline
+\noindent
+Flutter, Dart, Kotlin, Swift, SwiftUI, iOS, Android, CoreBluetooth, Android Bluetooth, ESP32, AVFoundation, CameraX, Objective-C, Java, C, IoT-integrasjon, mobil monorepo-arkitektur, vertical slices, micro-frontends, in-house design system, 400+ custom lint-regler, codegen-verktøy, RxDart, Bluetooth Low Energy, Widgetbook, flutter\_blue\_plus, Pub workspaces, Melos, Mason, UIKit, Android Settings Intents, DCM, Pigeon, Shorebird, Drift ORM/SQLite, Freezed, Build Runner, Golden testing, Unit Tests, Integration Tests, VSCode, Xcode, Android Studio, CI/CD (Azure DevOps, Fastlane, Maestro, xcodebuild, Fastlane Match, Fastlane Screenshot Automation, Fastlane Beta Deployment), self-hosted Mac Mini agent, TestFlight, Google Play Console, App Store Connect API, Firebase Crashlytics, Firebase Analytics, Firebase Performance Monitoring, Microsoft Clarity, Privacy Manifest, Privacy Policy, GDPR compliance, Google Cloud Console, stakeholder management, teamledelse, onboarding, rekruttering, backlog refinement, delivery management, produktstrategi, continuous discovery \& delivery, trio-modellen, Claude Code, Gemini, Copilot, Claude Desktop, ChatGPT Desktop, commitizen, Liquid Glass.
+\vspace{0.5em}
+
+
+\noindent
+\underline{Prosjekt:} 
+\newline
+\noindent
+I 2025 gikk InlineX inn i produksjonsfasen av Stream-prosjektet. Selskapet har blitt en scale-up og  har vokst til å være 21 ansatte. Målet med prosjektet var å videreutvikle selskapets native prosjekter for iOS og Android, redusere kostnader ved å erstatte dedikerte hardware-enheter med mobilapper og BLE-baserte IoT-løsninger, samt gjøre distribusjon og vedlikehold mer effektivt. InlineX Stream ble bygget for å digitalisere testing av sikkerhetsventiler (0–400 bar) i energi- og offshore-sektoren, og innen Q4 2025 ble løsningen lansert til betalende kunder. Som Tech Lead for mobil hadde jeg det overordnede ansvaret for monorepo-arkitekturen, programvarekvalitet og tekniske beslutninger. Prosjektet inkluderte videreutvikling av mobil monorepoen med tre apper, 20+ interne pakker, tre first-party plugins, og et stadig mer modent in-house designsystem.
+
+
+\noindent
+Jeg etablerte en vertical slices og  micro-frontends arkitektur for å gjøre det enkelst mulig for nye utviklere å komme i gang og bidra i den etterhvert voksende native infrastrukturen. Dette gjorde at utviklere på teamet kunne jobbe på spesifikke features isolert fra alle andre kontekster, og dermed øke produktiviteten. Jeg sikret arkitekturens robusthet gjennom 400+ custom lint-regler, codegen-verktøy og dokumentasjon. Dette sikret at teamet kunne komfortabelt skrive kode de var trygge på, enten med Flutter/Dart, rent Native med Kotlin/Swift eller annen relevant teknologi. Teamet var blitt et Native Platforms team.
+
+\vspace{0.5em}
+
+\noindent
+I tillegg så fikk jeg på plass en del agentisk AI infrastruktur (relevant MCP-kontekst, MD-dokumentasjon, subagenter, etc) som gjorde det enkelt å tilrettelegge for utviklerne og bruke verktøyet de likte best (Claude Code, GitHub Copilot, Gemini m.fl.).
+
+\vspace{0.5em}
+
+\noindent
+Jeg fikk også på plass SwiftUI-baserte grafer, en egen AVFoundation/CameraX-plugin for kamera, og videre modning av CoreBluetooth- og Android BLE-koden for stabilitet i produksjon. Som leder for mobilteamet hadde jeg ansvar for onboarding, ressursplanlegging, stakeholder management og leveranser. Jeg bidro i over 20 tekniske intervjuer for mobil, embedded og cloud-roller, og bidro aktivt i selskapets oppskalering. Jeg satte opp en self-hosted CI/CD-agent (M4 Mac Mini) for signering og distribusjon til TestFlight og Google Play, samt for å kjøre tunge E2E-tester (Maestro) som ikke kunne håndteres på Microsofts hosted agenter. Jeg samarbeidet med jurister om privacy policy og GDPR compliance, flyttet appene fra privat appstore til offisielle appstores for å redusere kostnader, og sikret samtidig at InlineX Stream og de andre applikasjonene kunne drives og videreutvikles trygt i en produksjonssetting.
+
+\vspace{0.5em}
+
+
+\vspace{2em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\large{Modningsfasen} & Jan.2024 - Des.2024 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\underline{Rolle:} 
+\newline
+\noindent
+Som Native Platforms Tech Lead hadde jeg overordnet ansvar for tre apper, teknisk retning for mobilavdelingen og ledelse av en annen juniorutvikler. Jeg drev rekruttering, opplæring, tekniske beslutninger og fungerte som bindeledd mellom produkt, design og ledelse. Jeg fasiliterte retroer, jobbet med OKRs, kvartalsvis estimater, stakeholder management og leveranser, samt bidro til selskapets produktstrategi og navnearbeid. I samarbeid med ledelsen bidro jeg til å transformere selskapet videre til et continuous discovery-produkt scale-up, hvor man organiserte arbeidet i trioer (produkteier, designer, tech lead) og bidro i å etablere et Domain Driven Design-rammeverk for felles begrepsbruk på tvers av organisasjonen.
+
+\vspace{0.5em}
+
+
+\noindent
+\underline{Kompetanser:}
+\newline
+\noindent
+Flutter, Dart, Kotlin, Swift, SwiftUI, Jetpack Compose, Objective-C, Android, iOS, Linux, ESP32, CoreBluetooth, Android Bluetooth API, BLE-arkitektur, gRPC, WebSockets, SQLite, Drift ORM, RxDart, Freezed, BLoC, Melos, Mason, Widgetbook, Azure DevOps, CI/CD, Figma, Figjam, Slack, stakeholder management, delivery management, OKRs, continuous discovery, trio-modellen, domain driven design modellering, teamledelse, rekruttering og produktstrategi.
+
+\vspace{0.5em}
+
+\noindent 
+\underline{Prosjekt:} 
+\newline
+\noindent
+I 2024 ledet jeg oppstarten av InlineX Stream, selskapets hittil største mobilprosjekt, samtidig som jeg hadde ansvar for drift av Insitu Sync. Stream-prosjektet kombinerte mobilutvikling med IoT og hardware-integrasjon, og hadde som formål å erstatte tidligere industrielle enheter til en verdi av rundt 2 millioner NOK med en løsning basert på app + Bluetooth-krets (ESP32). Resultatet var en reduksjon i produksjonskostnader til 150 000 NOK per enhet, lavere vedlikeholdskostnader og enklere hardware stack. På dette tidspunktet består teamet av en stadig voksende produktavdeling med folk på embedded, cloud, mobil, design og prosjektledelse. På teknisk side bygges den nye "Stream" appen av et inhouse design komponent bibliotek, first party native plugins og mange andre pakker takket være en monorepo arkitektur. Den viktigste featuren blir en tredelt BLE-løsning (native plugins i Swift/Kotlin, businesslogikk med egen GATT-protokoll, og UI/UX-lag).
+
+
+\vspace{2em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\large{Restruktureringsfasen} & Jan.2023 - Des.2023 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+
+\noindent
+\underline{Rolle:}
+\newline
+\noindent
+Jeg var både utvikler, arkitekt og endringsagent. Jeg tok initiativ til å etablere moderne arbeidsprosesser, fasiliterte retrospektiver og bidro aktivt til at selskapet innførte standups, sprintarbeid, OKRs, continuous discovery-trioer og stakeholder management. Jeg tok ansvar for å koble utvikling tettere på produkt- og forretningssiden, og sørget for at teamet hadde verktøyene og prosessene som trengtes for å skalere.
+
+\vspace{0.5em}
+
+\noindent
+\underline{Kompetanser:}
+\newline
+\noindent
+ Flutter, Dart, Kotlin, Swift, Melos (monorepo), Widgetbook, Mason, Drift ORM/SQLite, RxDart, Freezed, Build Runner, Firebase Crashlytics, Azure DevOps (Git, Pipelines), VS Code, Android Studio, Xcode, Figma (Material 3, Atomic Design), Slack, Confluence, Jira, Monday, WebSockets, gRPC, stakeholder management, delivery management, OKRs, continuous discovery, fasilitering av retrospektiver, innføring av agile prosesser, produktstrategi og endringsledelse.
+\vspace{0.5em}
+
+\noindent
+\underline{Prosjekt:}
+\newline
+\noindent
+I 2023 fortsatte jeg arbeidet med InlineX Mobile og tok  initiativ til å restrukturere kodebasen til et monorepo for å støtte utviklingen av flere enterprise nivå applikasjoner. Jeg utviklet blant annet Insitu Sync,  en applikasjon med robust online/offline-synkronisering, og bygde opp et enkelt designsystem i Figma inspirert av Material 3 og Atomic Design for gjenbruk av komponenter på tvers av web og mobil. Dette la grunnlaget for at teamet kunne levere nye produkter raskere og med høyere kvalitet. Samtidig tok jeg en nøkkelrolle i selskapets organisatoriske transformasjon. Jeg fikk ledelsen med på å hente inn nye roller – en ekstra utvikler, en designer og en prosjektleder (på kortere oppdrag) – noe som gjorde det mulig å etablere en mer moden produktutviklingskultur. Prosjektet markerte et vendepunkt der InlineX beveget seg fra prosjektorienterte fossefallsleveranser til å bygge en produktavdeling basert på agile prosesser, kontinuerlig discovery og tverrfaglig samarbeid.
+
+
+
+
+
+
+\vspace{2em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\large{Startupfasen} & Aug.2022 - Des.2022 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\underline{Rolle:}
+\newline
+\noindent
+Da jeg startet, bestod selskapet av kun åtte ansatte – uten etablert produktutviklingskultur, uten designer, og med kun to utviklere totalt, inklusiv meg selv. Jeg ble derfor ikke bare mobilutvikler, men også arkitekt, strateg og pedagog. Jeg hadde en sentral rolle i å forme både teknologivalg, utviklingspraksis og produktstrategi, og jeg konsulterte ledelsen i hvordan selskapet burde bevege seg fra ren bestillingsbasert utvikling til et moderne produkthus med egen produktavdeling. Jeg etablerte infrastruktur, innførte smidige utviklingsmetoder, og bygde opp grunnlaget for et bærekraftig produktmiljø. Over tid gikk jeg fra konsulent til å bli en nøkkelperson i selskapets teknologisatsning, med ansvar for leveranser og veiledning av andre utviklere.
+
+\vspace{0.5em}
+
+
+\noindent
+\underline{Kompetanser:}
+\newline
+\noindent
+Flutter, Dart, Kotlin, Swift, Android, iOS, Linux, Figma, Azure DevOps (Git, Pipelines), Firebase Crashlytics, SQLite, Riverpod, BLoC pattern, WebSockets, REST, RxDart, gRPC, KeyChain, MDM, Material Design 3, Widgetbook, Melos, Mason, Drift ORM, Shorebird, Pigeon, FFIgen, SwiftUI, Live Activities, Dynamic Island, TestFlight, Google Play Console, C++, BLE, Docker, Kubernetes, Maestro (integrasjonstesting), CI/CD, moderne produktutvikling og arkitektur.
+\vspace{0.5em}
+
+\noindent
+\underline{Prosjekt:}
+\newline
+\noindent
+ Jeg ble hentet inn som konsulent for å utvikle en kryssplattform applikasjon for iOS, Android og Linux, til bruk innen  energi- og offshore-sektoren. Oppdraget startet som en hasteløsning for kunder uten internett, men utviklet seg til å bli et strategisk produkt for selskapet. Jeg besluttet å ta i bruk Flutter, og leverte allerede første måned en proof of concept, "InlineX Mobile", som fortsatt brukes i produksjon i dag. Løsningen ble tatt i bruk på installasjoner i blant annet Australia, Malaysia, Saudi-Arabia, Equinor Kollsnes, Nyhavna og Angola. Prosjektet markerte en av de første gangene Flutter antageligvis ble benyttet i oljebransjen.
+
+
+\vspace{2em}
+
+% --- DNV ---
+\noindent
+{\Large \textbf{DNV}}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.4pt}
+
+ \noindent
+Det Norske Veritas er et norsk, internasjonalt selskap som jobber med kvalitetssikring, sertifisering og risikostyring.
+
+
+\vspace{1em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+{\large Maritime Cybernetics Advisory} & Juni.2021 -- Juni.2022 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\underline{Rolle:} 
+\newline
+\noindent
+Systemutvikler, backend, frontend, bildebehandlingsingeniør.
+
+\vspace{0.5em}
+
+\noindent
+\underline{Kompetanser:} 
+\newline
+\noindent
+TypeScript, React, ClojureScript, Reframe, Clojure, Java, Python (OpenCV), Leiningen, Jenkins, bildebehandling/Computer Vision, PID-regulator, Watershed algoritmen og klassisk bildebehandling, dynamisk posisjonering, sertifisering av DP-systemer, maritim domeneforståelse, General Arrangement tegninger.
+
+\vspace{0.5em}
+
+\noindent
+\underline{Prosjekt:}
+\newline
+\noindent
+Jeg har utviklet nye funksjoner i DP-CAP og DYN-CAP applikasjonene, brukt til beregninger og sertifisering av dynamisk posisjonering av skip. Jeg utviklet i Python/OpenCV basert på Watershed-metoden, som reduserte manuelt arbeid fra flere dager til sekunder, og som ble kritisk for sertifiseringsanalyser bestilt av kunder som Equinor. Dette økte lønnsomheten av disse rapportene massivt, med en fastpris på 100 000 NOK så tok det et par klikk å levere samme analyse som kunne ta opp til en uke før.
+
+\vspace{2em}
+
+% --- NTNU ---
+\noindent
+{\Large \textbf{NTNU}}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.4pt}
+5 årig sivilingeniørutdanning i kybernetikk og robotikk ved Norges teknisk-naturvitenskapelige universitet (NTNU) med fordypning i kunstig intelligens, maskinlæring og digitale tvillinger.
+
+\vspace{1em}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+{\large Masteroppgave} & 2021 -- 2022 \\
+\end{tabularx}
+
+\vspace{-0.5em}
+\noindent\rule{\linewidth}{0.2pt}
+\vspace{0.5em}
+
+\noindent
+\underline{Kompetanser:}
+\newline
+\noindent
+Digital Twin, Kunstig intelligens (ML, RNN, LSTM, ensemblemetoder), IoT \& sensorteknologi, Virtuell virkelighet (Unity, Oculus Quest 2), 3D-modellering (Revit, 3DS Max), Python, C\#, Datadrevet modellering, Prediksjon og simulering, Xgboost/Catboost/LightGBM, Tensorflow/Keras, Pandas, Numpy, Matplotlib, TwinMotion, Blender, SolidWorks, Unreal Engine 4, Anaconda, Jupyter Notebook, Scikit, CUDA, ARIMA, LSTM, JavaScript, Express.js, Node.js, Philips Hue, Netatmo Weather Station, Disruptive Technlogies Sensorer.
+
+\vspace{0.5em}
+
+\noindent
+\underline{Prosjekt:} 
+\newline
+\noindent
+I masteroppgaven utviklet Jeg en komplett digital tvilling av en bygning, kombinert med sensorteknologi, kunstig intelligens og virtuell virkelighet. Prosjektet demonstrerte flere modenhetsnivåer av digitale tvillinger – fra standalone, beskrivende og diagnostiske modeller, til prediktive og preskriptive modeller. Løsningen inkluderte blant annet 3D-modellering (Revit/3DS Max), Unity-integrasjon med sanntidsdata fra IoT-sensorer, maskinlæringsbaserte prediksjonsmodeller, samt VR-grensesnitt for interaktive demonstrasjoner. Oppgaven ble belønnet med Tekna-stipend, omtalt i Teknas magasin, og videre publisert som vitenskapelig artikkel i IEEE.
+ 
+
+
+ 
+\end{document}
