@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  11 DEC 2025 10:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.23)  15 JAN 2026 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/eliaselfarri/MyFolders/Development/Professional/resume/general_resume/general_resume
-(/Users/eliaselfarri/MyFolders/Development/Professional/resume/general_resume/general_resume.tex
+**/Users/eliaselfarri/MyFolders/Development/Professional/resume/development_general_resume/general_resume
+(/Users/eliaselfarri/MyFolders/Development/Professional/resume/development_general_resume/general_resume.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -891,11 +891,11 @@ Package rerunfilecheck Info: File `general_resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30268 strings out of 473832
- 653248 string characters out of 5729481
+ 653284 string characters out of 5729481
  1141468 words of memory out of 5000000
  52864 multiletter control sequences out of 15000+600000
  562849 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,9n,98p,1300b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,9n,98p,1312b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on general_resume.pdf (6 pages).
